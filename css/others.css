@@ -1,0 +1,13 @@
+ul {
+	display: inline-block;
+	text-align: center;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.container img {
+    width: 400px;
+    height: auto;
+}

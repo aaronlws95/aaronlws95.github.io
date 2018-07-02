@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="An Aaron Low Website">
+    <meta name="author" content="Aaron Low">
+    <link rel="icon" href="../img/avatarsmall.jpg">
+
+    <title>Aaron Low - RGB to Depth GAN</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">AARON LOW</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../engineering.html">Engineering</a></li>
+            <li><a href="../download/Aaron_Low_Weng_Soon_CV.pdf" target="_blank">CV</a></li>
+            <li><a href="../others.html">Others</a></li>  
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="starter-template">
+        <h1 class="section-heading">RGB to Depth GAN</h1>
+        <hr>
+        <!-- Project -->
+        <div class="row featurette">
+            <h2 class="featurette-heading text-muted project-heading">OVERVIEW</h2>
+
+            <p class="lead" align = "justify"> This project was carried out as part of my final (fourth) year project at Imperial  College London in 2017. The project title is "Depth to Colour Translation for 3D Hand Pose Estimation From Monocular RGB With Generative Adversarial Networks". Essentially the goal of this project was to harness the capabilities of Generative Adversarial Networks to translate the depth images in the <a href="https://arxiv.org/pdf/1704.02612.pdf">BigHand</a> hand pose estimation dataset to RGB images to assist the training of hand pose estimation networks based on RGB images. </p> 
+
+            <p class="lead" align = "justify"> In this project I experimented with Generative Adversarial Networks (GAN) to translate depth images to RGB images. I generated a novel dataset for training this GAN which consists of depth and RGB image pairs. I used a depth camera followed by some image preprocessing to do this. The architecture I used is heavily inspired by <a href="https://phillipi.github.io/pix2pix/">pix2pix</a>. I also attempted to modify it and analysed the generated images qualitatively and quantitatively. I also translated the BigHand dataset using the GAN and trained a <a href="https://cims.nyu.edu/~tompson/NYU_Hand_Pose_Dataset.htm">hand pose esimation network</a> to analyse the results.</p> 
+
+        </div>
+        <hr>
+        <h2 class="featurette-heading text-muted project-heading">System Pipeline</h2>
+        <img class="featurette-image img-responsive center-block" src="../img/pipeline.jpg" alt="System Pipeline">
+        <hr>
+        <h2 class="featurette-heading text-muted project-heading">Generated Example</h2>
+        <img class="featurette-image img-responsive center-block" src="../img/generatedimages.jpg" width="50%" height="50%"  alt="Generated Example">       
+        <hr>
+        <h2 class="featurette-heading text-muted project-heading">Hand Pose Estimation Example</h2>
+        <img class="featurette-image img-responsive center-block" src="../img/handposeestimation.jpg" width="50%" height="50%"  alt="HPE Example">               
+        <div class="row featurette">
+            <hr>
+            <h2 class="featurette-heading text-muted project-heading">SKILLS</h2>
+                <ul class ="lead mid" align="center">
+                    <li>Python</li>
+                    <li>Tensorflow/Keras</li>
+                    <li>Hand Pose Estimation</li>
+                    <li>Machine Learning</li>
+                    <li>Computer Vision</li>
+                    <li>Generative Adversarial Netowrks</li>
+                    <li>Convolutional Neural Networks</li>
+                </ul>
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

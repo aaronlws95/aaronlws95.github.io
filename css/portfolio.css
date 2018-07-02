@@ -1,0 +1,50 @@
+/*!
+ * Start Bootstrap - 3 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.portfolio-item {
+	margin: 0 0 15px;
+	right: 0;
+}
+
+.portfolio-item .portfolio-caption {
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.portfolio-item .portfolio-image-box {
+
+}
+
+.portfolio-item .portfolio-image {
+	display:block;
+	position: relative;
+	max-width: 300px;
+	height: 170px;
+	vertical-align: middle;
+    margin:auto;
+}
+
+.portfolio-item .others-image {
+	display:block;
+	position: relative;
+	max-width: 300px;
+	max-height: 170px;
+	vertical-align: middle;
+    margin:auto;
+}
+
+
+
+
+footer {
+    margin: 50px 0;
+}

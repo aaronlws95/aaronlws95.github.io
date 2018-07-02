@@ -1,0 +1,31 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.section-heading{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.project-heading{
+	text-align: center;
+	font-weight:bold;
+}
+.contact-icon{
+	margin: 10px;
+	display: inline-block;
+}
+
+
+ul {
+
+    list-style-position: inside;
+}
+
+ul.mid{
+	display:inline-block;
+	text-align: left;
+}
