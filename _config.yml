@@ -71,8 +71,8 @@ news_limit: 5
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
-style:  davewhipp
+highlighter: rouge
+style:  kjhealy
 
 # Includes & excludes
 include: ['_pages']
