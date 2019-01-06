@@ -90,14 +90,14 @@ scholar:
 
   last_name: Low
 
-  style: apa
+  style: ieee
   locale: en
 
   sort_by: year
   order: descending
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: citations.bib
   bibliography_template: bib
 
   replace_strings: true
@@ -115,3 +115,5 @@ scholar:
 jquery_version: "1.12.4"
 katex_version: "0.9.0"
 anchorjs_version: "3.2.2"
+
+

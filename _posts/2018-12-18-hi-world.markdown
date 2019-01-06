@@ -1,0 +1,14 @@
+---
+layout: post
+title:  Hi World
+date:   2019-01-06
+description: First blog post
+---
+
+Happy New Year! This is my first blog post woo.
+
+
+
+<!-- {% cite erol2007vision %}
+
+{% bibliography --file citations %} -->

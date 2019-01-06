@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: Aaron <strong>Low</strong>
-description: PhD Student. Imperial College London. Computer Vision. Machine Learning
+description: PhD Student. Computer Vision. Machine Learning.
 
 profile:
   align: right
@@ -23,4 +23,4 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
  -->
 
- Hello there, I am Aaron Low.
+ Hello there, I am Aaron Low. I am currently a PhD student under the supervision of [Tae-Kyun Kim](https://sites.google.com/view/tkkim/) and [Chen Change Loy](http://personal.ie.cuhk.edu.hk/~ccloy/). I am also a member of the [Imperial Computer Vision & Learning Lab](https://labicvl.github.io/). My research interests include Computer Vision and Machine Learning. 
