@@ -19,16 +19,14 @@ PhD Student in Computer Vision and Machine Learning at Imperial College London. 
 
 ## Education 
 
-`2014-18`
-__Imperial College London__ MEng Electrical and Electronic Engineering (_First class honours_) 
+__Imperial College London__ `2014-18`  MEng Electrical and Electronic Engineering (_First class honours_) 
 
 Thesis: [_Depth to Colour Translation for 3D Hand Pose Estimation From
 Monocular RGB With Generated Adversarial Networks_](https://labicvl.github.io/docs/thesis/MEng_thesis/awl14.pdf)
 
 ## Work
 
-`June-Sept 2018`
-__Materialise Malaysia__ Software Engineer Intern 
+__Materialise Malaysia (June-Sept 2018)__ Software Engineer Intern 
 
 <!-- ### Footer
 
