@@ -28,7 +28,7 @@ Monocular RGB With Generated Adversarial Networks_](https://labicvl.github.io/do
 ## Work
 
 `June-Sept 2018`
-    __Materialise Malaysia__ Software Engineer Intern 
+__Materialise Malaysia__ Software Engineer Intern 
 
 <!-- ### Footer
 
