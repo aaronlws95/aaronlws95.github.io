@@ -17,14 +17,18 @@ PhD Student
 
 PhD Student in Computer Vision and Machine Learning at Imperial College London. Under supervision of [Tae-Kyun Kim](https://sites.google.com/view/tkkim/) and [Chen Change Loy](http://personal.ie.cuhk.edu.hk/~ccloy/).
 
-## Education `2014-18`
+## Education 
 
+`2014-18`
 __Imperial College London__ MEng Electrical and Electronic Engineering (_First class honours_) 
 
 Thesis: [_Depth to Colour Translation for 3D Hand Pose Estimation From
 Monocular RGB With Generated Adversarial Networks_](https://labicvl.github.io/docs/thesis/MEng_thesis/awl14.pdf)
 
+## Work
 
+`June-Sept 2018`
+    __Materialise Malaysia__ Software Engineer Intern 
 
 <!-- ### Footer
 
