@@ -24,10 +24,6 @@ __Imperial College London__ `2014-18`  MEng Electrical and Electronic Engineerin
 Thesis: [_Depth to Colour Translation for 3D Hand Pose Estimation From
 Monocular RGB With Generated Adversarial Networks_](https://labicvl.github.io/docs/thesis/MEng_thesis/awl14.pdf)
 
-## Work
-
-__Materialise Malaysia (June-Sept 2018)__ Software Engineer Intern 
-
 <!-- ### Footer
 
 Last updated: December 2018 -->
