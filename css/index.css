@@ -43,9 +43,11 @@ body {
 }
 .speechbubbletext{
     position: absolute;
-    top: 5%;
-    left: 46%;
-    transform: translate(10%, 10%);
+    top: 0%;
+    left: 0%;
+    margin-right: 10%;
+    margin-left: 40%;
+    transform: translate(10%, 5%);
 }
 
 /* Links */
