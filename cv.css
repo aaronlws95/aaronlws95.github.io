@@ -1,0 +1,114 @@
+/*
+CSS for CV
+/*
+
+/* Whole document */
+body {
+    font-family: "Verdana", Helvetica, Arial, sans-serif;
+    width: 800px;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Title of the resume */
+h1 {
+    font-size: 55px;
+    color: #FFFFFF;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-bottom: 15px;
+    background-color: #000000;
+}
+h1:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* Definition list */
+dd {
+    margin-top: 0.5%;
+    margin-right: 30%;
+}
+
+/* Images */
+img.circle {
+    border-radius: 50%;
+  }
+
+
+/* Lists */
+ul.icon {
+    list-style: none;
+    text-align: center;
+}
+li {
+    display: inline;
+}
+li a {
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/* Titles of categories */
+h2 {
+    color: #FFFFFF;
+    display:table;
+    background-color: #000000;
+}
+h2:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* Blockquotes */
+blockquote {
+    text-align: center
+}
+
+/* Links */
+a.text {
+    text-decoration: none;
+    color: #000000;
+}
+a.text:hover, a.text:active {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+/* Horizontal separators */
+hr {
+    color: #A6A6A6;
+}
+
+em {
+    font-family: "Arial", sans-serif;
+    font-size: 90%;
+    font-style: normal; 
+    font-variant: small-caps
+}
+
+.normal {
+    font-weight: normal
+}
+.role {
+    font-style: italic;
+}
+.miniheader {
+    margin-top: 1%;
+    font-weight: bold;
+}
+.year {
+    float: right;
+    text-align: right;
+    font-weight: bold;
+}
+
+footer {
+    text-align:center;
+}

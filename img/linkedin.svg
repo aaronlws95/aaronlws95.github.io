@@ -1,0 +1,9 @@
+<?xml version="1.0" ?><svg viewBox="2764 366 120 120" xmlns="http://www.w3.org/2000/svg"><defs><style>
+      .cls-1 {
+        fill: #0077b5;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style></defs><g data-name="Group 3" id="Group_3" transform="translate(2663 315)"><circle class="cls-1" cx="60" cy="60" data-name="Ellipse 2" id="Ellipse_2" r="60" transform="translate(101 51)"/><g data-name="Group 2" id="Group_2" transform="translate(37.5 -108.5)"><rect class="cls-2" data-name="Rectangle 1" height="50.68" id="Rectangle_1" transform="translate(87.045 206.32)" width="16.48"/><path class="cls-2" d="M9.77.5a9.2,9.2,0,0,1,9.27,9.122,9.2,9.2,0,0,1-9.27,9.122A9.2,9.2,0,0,1,.5,9.622,9.2,9.2,0,0,1,9.77.5Z" data-name="Path 3" id="Path_3" transform="translate(85 182)"/><path class="cls-2" d="M404.6,157.694V107.463h15.112v7.206s7.352-11.278,19.707-8.146S452.8,123.441,452.8,123.441v34.253H437.377V128.767s.1-8.354-8.169-8.146-8.781,8.146-8.781,8.146l-.715,28.927Z" data-name="Path 2" id="Path_2" transform="translate(-291.796 99.306)"/></g></g></svg>
