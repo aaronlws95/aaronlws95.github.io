@@ -43,7 +43,7 @@ body {
 }
 .speechbubbletext{
     position: absolute;
-    top: 2%;
+    top: 10%;
     left: 2%;
     margin-right: 5%;
     margin-left: 15%;
@@ -64,7 +64,7 @@ a.text:hover, a.text:active {
 
 /* Navigation bar */
 nav ul {
-    min-width: 1200px;
+    display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 0;
