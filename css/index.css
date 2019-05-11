@@ -1,4 +1,12 @@
 /* Website CSS */
+html, body {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow: auto;
+}
 
 /* Whole page */
 body {
@@ -35,9 +43,9 @@ body {
 }
 .speechbubbletext{
     position: absolute;
-    top: 12%;
-    left: 42%;
-    /* transform: translate(-50%, -50%); */
+    top: 5%;
+    left: 46%;
+    transform: translate(10%, 10%);
 }
 
 /* Links */
@@ -54,7 +62,7 @@ a.text:hover, a.text:active {
 
 /* Navigation bar */
 nav ul {
-    min-width: 1000px;
+    min-width: 1200px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -104,5 +112,5 @@ footer li {
 footer li a {
     display: inline;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1% 1%;
 }
