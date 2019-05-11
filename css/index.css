@@ -21,7 +21,6 @@ body {
     margin: auto;
 }
 .row{
-    position: relative;
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%
@@ -38,16 +37,17 @@ body {
 }
 .speechbubblecolumn{
     float: left;
+    position: relative;
     margin-left:1%;
     width: 69%;
 }
 .speechbubbletext{
     position: absolute;
-    top: 0%;
-    left: 0%;
-    margin-right: 10%;
-    margin-left: 40%;
-    transform: translate(10%, 5%);
+    top: 2%;
+    left: 2%;
+    margin-right: 5%;
+    margin-left: 15%;
+    margin-bottom: 5%
 }
 
 /* Links */
