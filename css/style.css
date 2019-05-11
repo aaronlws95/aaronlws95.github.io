@@ -1,0 +1,108 @@
+/* Website CSS */
+
+/* Whole page */
+body {
+    font-family: "Verdana", Helvetica, Arial, sans-serif;
+    margin: auto;
+    background: #FFFFFF;
+}
+
+/* Content */
+.content{
+    width: 1000px;
+    margin: auto;
+}
+.row{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.facecolumn {
+    float: left;
+    width: 30%
+}
+.speechbubblecolumn{
+    float: left;
+    margin-left:1%;
+    width: 69%;
+}
+.speechbubbletext{
+    position: absolute;
+    top: 12%;
+    left: 42%;
+    /* transform: translate(-50%, -50%); */
+}
+
+/* Links */
+a.text {
+    text-decoration: none;
+    color: #000000;
+}
+a.text:hover, a.text:active {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+/* Navigation bar */
+nav ul {
+    min-width: 1000px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: #FFFFFF;
+    color: #111;
+}
+nav li.right {
+    float: right;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Images */
+img.circle {
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    margin-top: 10px;
+}
+footer ul {
+    list-style: none;
+    text-align: center;
+}
+footer li {
+    display: inline;
+}
+footer li a {
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+}

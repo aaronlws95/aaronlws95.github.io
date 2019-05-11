@@ -1,6 +1,4 @@
-/*
-CSS for CV
-/*
+/* CSS for CV /*
 
 /* Whole document */
 body {
@@ -11,7 +9,7 @@ body {
     padding: 10px 10px 10px 10px;
 }
 
-/* Title of the resume */
+/* Main title */
 h1 {
     font-size: 55px;
     color: #FFFFFF;
@@ -36,21 +34,6 @@ dd {
 /* Images */
 img.circle {
     border-radius: 50%;
-  }
-
-
-/* Lists */
-ul.icon {
-    list-style: none;
-    text-align: center;
-}
-li {
-    display: inline;
-}
-li a {
-    display: inline;
-    text-align: center;
-    padding: 14px 16px;
 }
 
 /* Titles of categories */
@@ -64,12 +47,18 @@ h2:hover {
     background-color: #FFFFFF;
 }
 
-/* Blockquotes */
-blockquote {
-    text-align: center
+/* Links */
+
+h1 a{
+    text-decoration: none;  
+    color: #FFFFFF;
 }
 
-/* Links */
+h1 a:hover{
+    text-decoration: none;  
+    color: #111;
+}
+
 a.text {
     text-decoration: none;
     color: #000000;
@@ -86,6 +75,7 @@ hr {
     color: #A6A6A6;
 }
 
+/* Emphasis */
 em {
     font-family: "Arial", sans-serif;
     font-size: 90%;
@@ -93,6 +83,13 @@ em {
     font-variant: small-caps
 }
 
+/* Footer */
+footer {
+    margin-top: 10px;
+    text-align:center;
+}
+
+/* Classes */
 .normal {
     font-weight: normal
 }
@@ -107,8 +104,4 @@ em {
     float: right;
     text-align: right;
     font-weight: bold;
-}
-
-footer {
-    text-align:center;
 }
