@@ -117,6 +117,8 @@ img.circle {
 /* Footer */
 footer {
     margin-top: 1%;
+    margin-right: auto;
+    margin-left: auto;
 }
 footer ul {
     list-style: none;
@@ -128,12 +130,12 @@ footer li {
 footer li a {
     display: inline;
     text-align: center;
-    padding: 1% 1%;
+    padding: 2% 2%;
 }
 
 /* Marquee because */
 .marquee {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
