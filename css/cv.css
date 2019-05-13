@@ -52,12 +52,18 @@ h1 a{
     text-decoration: none;  
     color: #FFFFFF;
 }
-
 h1 a:hover{
     text-decoration: none;  
     color: #111;
 }
-
+h2 a{
+    text-decoration: none;  
+    color: #FFFFFF;
+}
+h2 a:hover{
+    text-decoration: none;  
+    color: #111;
+}
 a.text {
     text-decoration: none;
     color: #000000;
@@ -84,13 +90,13 @@ em {
 
 /* Footer */
 footer {
-    margin-top: 10px;
-    text-align:center;
+    margin-top: 1%;
+    text-align: center;
 }
 
 /* Classes */
 .normal {
-    font-weight: normal
+    font-weight: normal;
 }
 .role {
     font-style: italic;

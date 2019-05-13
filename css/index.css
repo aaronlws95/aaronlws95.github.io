@@ -2,11 +2,11 @@
 
 /* Fix overall position of website */
 html, body {
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     overflow: auto;
 }
 
@@ -17,8 +17,25 @@ body {
     background: #FFFFFF;
 }
 
+/* Page title */
+.title{
+    text-align: center;
+}
+h1 {
+    display: inline-block;
+    font-size: 55px;
+    background-color: black;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+h1:hover {
+    background-color: white;
+    color: black;
+}
+
 /* Content */
-.content{
+#content{
     max-width: 1000px;
     margin: auto;
 }
@@ -33,13 +50,14 @@ body {
     display: table;
     clear: both;
 }
+
 /* Column for my face */
-.facecolumn {
+#facecolumn {
     float: left;
     width: 30%
 }
 /* Column for text */
-.textcolumn{
+#textcolumn{
     float: left;
     width: 50%;
     margin-left: 5%;
@@ -49,13 +67,66 @@ body {
     text-align: justify;
 }
 
+
+/* Project boxes*/
+.projrow{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%
+}
+/* Clear floats after the columns */
+.projrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.proj{
+    position: relative;
+    float: left;
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+}
+.proj img{
+    float: left;
+    width:  250px;
+    height: 250px;
+    border: solid #000000 5px; 
+    text-align: center;
+}
+.proj .text{
+    position: absolute;
+    visibility: hidden;
+    float: left;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+#revgif:hover{
+    content: url('../img/revolver.gif');
+}
+#dagif:hover{
+    content: url('../img/drawingappdemo.gif');
+}
+#smgif:hover{
+    content: url('../img/supermiami.gif');
+}
+.proj:hover img{
+    opacity: 0.5;
+}
+.proj:hover .text{
+    visibility: visible;
+}
+
 /* Size change compatibility */
 @media screen and (max-width: 1000px) {
-    .facecolumn {
+    #facecolumn {
         float: none;
         margin: auto;
     }
-    .textcolumn{
+    #textcolumn{
         float: none;
         margin: auto;
         text-align: justify;
@@ -93,10 +164,25 @@ nav li a {
     font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
+    border: solid #000000 2px;
 }
-nav li a:hover {
+nav li a.active {
+    display: block;
+    color: #111;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    
+}
+nav li a:hover{
     background-color: #FFFFFF;
     color: #111;
+}
+nav:hover li a.active{
+    background-color: #111;
+    color: #FFFFFF;
 }
 /* For the AARON on the nav bar */
 nav li.right {
@@ -109,6 +195,7 @@ nav li.right {
     margin-right: 10%;
     text-decoration: none;
 }
+
 /* Images */
 img.circle {
     border-radius: 50%;
