@@ -120,19 +120,6 @@ h1:hover {
     visibility: visible;
 }
 
-/* Size change compatibility */
-@media screen and (max-width: 1000px) {
-    #facecolumn {
-        float: none;
-        margin: auto;
-    }
-    #textcolumn{
-        float: none;
-        margin: auto;
-        text-align: justify;
-    }
-}
-
 /* Links */
 a.text {
     text-decoration: none;
@@ -250,4 +237,41 @@ footer li a {
     100% {
         transform: translate(-80%, 0);
     }
+}
+
+/* Size change compatibility */
+@media screen and (max-width: 1000px) {
+    #facecolumn {
+        float: none;
+        margin: auto;
+    }
+    #textcolumn{
+        float: none;
+        margin: auto;
+        text-align: justify;
+    }
+    .proj{
+        float: none;
+        margin: auto;
+        margin-bottom: 10%;
+        text-align: center;
+        width: 100%;
+    }
+    .proj img{
+        display: block;
+        float: none;
+        margin: auto;
+    }    
+    .proj .text{
+        position: absolute;
+        visibility: hidden;
+        /* float: left; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        float: none;
+        margin: auto;
+        width: 25%;
+    }    
 }
