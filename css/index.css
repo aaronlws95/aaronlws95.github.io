@@ -161,7 +161,6 @@ nav li a.active {
     padding: 14px 16px;
     text-decoration: none;
     background-color: #FFFFFF;
-    
 }
 nav li a:hover{
     background-color: #FFFFFF;
@@ -273,5 +272,24 @@ footer li a {
         float: none;
         margin: auto;
         width: 25%;
+    }    
+    nav li {
+        width: 33%;
+        float: left;
+    }
+    .marquee {
+        width: 100%;
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    @keyframes marquee {
+        0% {
+            transform: translate(0%, 0);
+        }
+        100% {
+            transform: translate(-100%, 0);
+        }
     }    
 }
