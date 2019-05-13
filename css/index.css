@@ -26,8 +26,8 @@ h1 {
     font-size: 55px;
     background-color: black;
     color: white;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 h1:hover {
     background-color: white;
