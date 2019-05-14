@@ -8,6 +8,7 @@
   <meta name="author" content="Aaron Low">
   <link rel="icon" href="img/avatarsmall.ico">
   <link rel="stylesheet" href="css/index.css" type="text/css"/>
+  <link rel="stylesheet" href="css/modal.css" type="text/css"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
   <title>Aaron's Home</title>
 </head>
@@ -29,13 +30,16 @@
 <div id="content">
 <!-- Row1 -->   
 <div class="projrow">
+<!-- ASDA -->
 <div class="proj">
-<img src="img/asda_cover.jpg" alt="asda">
-<p class="text">Autonomous Snack Delivery Android</p>
+<p class="text">ASDA</p>
+<a href="#asdamodal"><img src="img/asda_cover.jpg" alt="asda"></a>
 </div>
+<!-- ARMadillo -->
 <div class="proj">
-<img src="img/armadillo_ss.jpg" alt="armadillo">
 <p class="text">ARMadillo</p>
+<a href="#armmodal"><img src="img/armadillo_ss.jpg" alt="armadillo"></a>
+<div id="armmodal"><a href="#">Close</a>This is the second modal</div>
 </div>
 <div class="proj">
 <img src="img/emocoaster.jpg" alt="emocoaster">
@@ -57,7 +61,7 @@
 <p class="text">NeuroSpell</p>
 </div>
 </div> 
-<!-- Row2 -->   
+<!-- Row3 -->   
 <div class="projrow">
 <div class="proj">
 <img id="revgif" src="img/revolver.jpg" alt="revolver">
@@ -83,4 +87,19 @@
 <li><a href="https://twitter.com/aaronlws95/"><img src="img/twitter.svg" width="26" height="26" class="circle" alt="twitter"></a></li>
 </ul>
 </footer>
+
+<!-- Modals -->
+<!-- Asda Modal -->
+<div id="asdamodal">
+<div class="modal-container">
+<div class="modal-exit">
+<a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+</div>    
+<div class="modal-content">
+<object height="50%" width="50%" data="https://www.youtube.com/embed/3VU_DWy4ZFs"></object>
+</iframe>
+</div>
+</div>
+</div>
 </html>
+
