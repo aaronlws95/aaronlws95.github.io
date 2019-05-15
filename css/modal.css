@@ -8,7 +8,9 @@
     height: 95%;
     background-color:rgba(0,0,0,0.5);  
 }
-
+[id*=modal]:target {
+    display: block;
+}
 .modal-container{
     position: fixed;
     top: 50%;
@@ -18,24 +20,20 @@
     border: solid black 5px;
     width: 80%;
     height: 80%;
+    overflow: auto;
 }
-
 .modal-content{
     text-align: center;
-    width: 100%;
-    height: 100%
+    margin: auto;
+    width: 80%;
+    height: 80%;
 }
-
+.modal-text{
+    text-align: justify;
+    margin-bottom: 10%;
+}
 .modal-exit{
     position: relative;
     float: right;
 }
 
-/* ASDA Modal */
-#asdamodal:target {
-    display: block;
-}
-/* ARMadillo Modal */
-#armmodal:target {
-    display: block;
-}

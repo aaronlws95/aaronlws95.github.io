@@ -33,6 +33,22 @@ h1:hover {
     background-color: white;
     color: black;
 }
+h2 {
+    display: inline-block;
+    font-size: 35px;
+    background-color: black;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+h2:hover {
+    background-color: white;
+    color: black;
+}
+
+hr {
+    width: 60%;
+}
 
 /* Content */
 #content{
@@ -123,7 +139,8 @@ h1:hover {
 /* Links */
 a.text {
     text-decoration: none;
-    color: #000000;
+    color: #333399;
+    text-decoration: underline;
 }
 a.text:hover, a.text:active {
     background-color: #000000;
@@ -293,3 +310,6 @@ footer li a {
     }    
 }
 
+.border {
+    border: black solid 3px;
+}
