@@ -116,7 +116,16 @@ hr {
     visibility: hidden;
     float: left;
     top: 40%;
-    left: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+.proj .show-text{
+    position: absolute;
+    visibility: visible;
+    float: left;
+    top: 40%;
+    left: 45%;
     transform: translate(-50%, -50%);
     font-size: 25px;
 }
@@ -134,6 +143,27 @@ hr {
 }
 .proj:hover .text{
     visibility: visible;
+}
+#web-proj {
+    float: left;
+    width:  250px;
+    height: 250px;
+    border: solid #000000 5px; 
+    text-align: center;
+    font-size: 3em;
+    background-color: black;
+    margin: auto;
+}
+#web-proj p{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+#web-proj:hover {
+    background-color: white;
+}
+#web-proj:hover p{
+    color: black;
 }
 
 /* Links */
@@ -293,6 +323,16 @@ footer li a {
         width: 33%;
         float: left;
     }
+    #web-proj {
+        float: none;
+        width:  250px;
+        height: 250px;
+        border: solid #000000 5px; 
+        text-align: center;
+        font-size: 3em;
+        background-color: black;
+        margin: auto;
+    }    
     .marquee {
         width: 100%;
         margin: 0 auto;
