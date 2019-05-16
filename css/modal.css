@@ -37,3 +37,14 @@
     float: right;
 }
 
+.neuroimg {
+    width: auto;
+    height: 50%; 
+}
+
+@media screen and (max-width: 1200px) {
+    .neuroimg {
+        width: 50%;
+        height: auto; 
+    }
+}
