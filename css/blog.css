@@ -1,0 +1,82 @@
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+    float: left;
+    width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.blogrow{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%
+}
+/* Clear floats after the columns */
+.blogrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.recent {
+    text-align: left;
+    border: black solid 2px;
+    padding: 2% 2% 2% 2%
+}
+.recent hr{
+    width: 100%;
+    background-color: black;
+    color: black;
+    height: 2px;    
+}
+
+.recent h2 {
+    display: block;
+    font-size: 35px;
+    background-color: black;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.recent h2:hover {
+    background-color: white;
+    color: black;
+}
+.recent p{
+    margin: 1% 1% 1% 1%;
+    font-size: 20px;
+}
+
+.card .title {
+    display: inline-block;
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.card h4 {
+    font-weight: bold;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn { 
+        width: 100%;
+        padding: 0;
+    }
+    .recent {
+        text-align: center;
+    }
+}

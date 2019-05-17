@@ -328,8 +328,19 @@ footer small{
         float: none;
         margin: auto;
     }    
+    .proj .show-text{
+        position: absolute;
+        visibility: visible;
+        /* float: left; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        float: none;
+        margin: auto;
+    }
     nav li {
-        width: 33%;
+        width: 25%;
         float: left;
     }
     #web-proj {
