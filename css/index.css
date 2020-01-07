@@ -108,7 +108,7 @@ hr {
     float: left;
     width:  250px;
     height: 250px;
-    border: solid #000000 5px; 
+    border: solid #000000 5px;
     text-align: center;
 }
 .proj .text{
@@ -148,7 +148,7 @@ hr {
     float: left;
     width:  250px;
     height: 250px;
-    border: solid #000000 5px; 
+    border: solid #000000 5px;
     text-align: center;
     font-size: 3em;
     background-color: black;
@@ -316,7 +316,7 @@ footer small{
         display: block;
         float: none;
         margin: auto;
-    }    
+    }
     .proj .text{
         position: absolute;
         visibility: hidden;
@@ -327,7 +327,7 @@ footer small{
         font-size: 25px;
         float: none;
         margin: auto;
-    }    
+    }
     .proj .show-text{
         position: absolute;
         visibility: visible;
@@ -340,19 +340,19 @@ footer small{
         margin: auto;
     }
     nav li {
-        width: 25%;
+        width: 33.33%;
         float: left;
     }
     #web-proj {
         float: none;
         width:  250px;
         height: 250px;
-        border: solid #000000 5px; 
+        border: solid #000000 5px;
         text-align: center;
         font-size: 3em;
         background-color: black;
         margin: auto;
-    }    
+    }
     .marquee {
         width: 100%;
         margin: 0 auto;
@@ -367,7 +367,7 @@ footer small{
         100% {
             transform: translate(-100%, 0);
         }
-    }    
+    }
 }
 
 .border {
