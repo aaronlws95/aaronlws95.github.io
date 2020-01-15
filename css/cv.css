@@ -16,7 +16,7 @@ h1 {
     display: table;
     text-align: center;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
     margin-bottom: 15px;
     background-color: #000000;
 }
@@ -49,19 +49,19 @@ h2:hover {
 
 /* Links */
 h1 a{
-    text-decoration: none;  
+    text-decoration: none;
     color: #FFFFFF;
 }
 h1 a:hover{
-    text-decoration: none;  
+    text-decoration: none;
     color: #111;
 }
 h2 a{
-    text-decoration: none;  
+    text-decoration: none;
     color: #FFFFFF;
 }
 h2 a:hover{
-    text-decoration: none;  
+    text-decoration: none;
     color: #111;
 }
 a.text {
@@ -84,7 +84,7 @@ hr {
 em {
     font-family: "Arial", sans-serif;
     font-size: 90%;
-    font-style: normal; 
+    font-style: normal;
     font-variant: small-caps
 }
 
@@ -100,13 +100,25 @@ footer {
 }
 .role {
     font-style: italic;
+    font-size: 105%;
 }
 .miniheader {
-    margin-top: 1%;
+    margin-top: 1.4%;
     font-weight: bold;
+    font-size: 110%;
 }
 .year {
     float: right;
     text-align: right;
     font-weight: bold;
+}
+.personal {
+    text-align: center;
+}
+.topspace {
+    margin-top: 1%
+}
+.listheader {
+    font-weight: bold;
+    line-height: 0.8;
 }
