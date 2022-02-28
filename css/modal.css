@@ -31,6 +31,7 @@
 .modal-text{
     text-align: justify;
     margin-bottom: 10%;
+    padding-bottom: 1%;
 }
 .modal-exit{
     position: relative;
