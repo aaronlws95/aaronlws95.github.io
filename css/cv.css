@@ -65,7 +65,7 @@ h2 a:hover{
     color: #111;
 }
 a.text {
-    text-decoration: none;
+    text-decoration: underline;
     color: #000000;
 }
 a.text:hover, a.text:active {
