@@ -1,5 +1,4 @@
 document.write(`
-
 <body>
     <!-- Name -->
     <h1>&nbspAaron Low Weng Soon&nbsp</h1>
@@ -17,7 +16,8 @@ document.write(`
             <dt class="miniheader">Imperial College London<span class="year">2018 - 2019</span></dt>
             <dt class="role">PhD in Machine Learning and Computer Vision (discontinued)</dd>
             <dd><b>Supervisors:</b> <a href="https://www.imperial.ac.uk/people/tk.kim" class="text">Kim Tae-Kyun</a> and
-                <a href="http://personal.ie.cuhk.edu.hk/~ccloy/" class="text">Loy Chen Change</a></dd>
+                <a href="http://personal.ie.cuhk.edu.hk/~ccloy/" class="text">Loy Chen Change</a>
+            </dd>
             <dd><b>Research area:</b> 3D Pose Estimation</dd>
             <!-- MEng -->
             <dt class="miniheader"><a href="https://www.imperial.ac.uk/" class="text">Imperial College London</a> <span
@@ -47,12 +47,12 @@ document.write(`
                     -
                     Present</span></dt>
             <dt class="role">Research Engineer (Sensor Calibration)</dd>
-            <dd>• Research and development of solutions for sensor (cameras, LIDARs, radars) calibration and validation
+            <dd>• Research and development of solutions for sensor (cameras, LIDARs, radars, IMU) calibration and validation
                 for
                 autonomous vehicles</dd>
-            <dd>• Development and maintenance of production ready automated sensor calibration tools</dd>
-            <dd>• Developed data extraction and processing pipelines for calibration metrics and designed dashboards to
-                display results to users</dd>
+            <dd>• Developed tools in C++ to enable users to visually inspect sensor calibration and run calibration algorithms</dd>
+            <dd>• Developed deep learning infrastructure with PyTorch as well as training and evaluating models</dd>
+            <dd>• Implemented data pipelines for analyzing metrics, collecting deep learning datasets leveraging SQL databases and cloud solutions</dd>
             <!--Aptiv-->
             <dt class="miniheader"><a href="https://www.aptiv.com/" class="text">Aptiv</a><span class="year">2020</span>
             </dt>
@@ -82,6 +82,11 @@ document.write(`
     <h2>&nbsp<a href="https://aaronlws95.github.io/projects.html">Projects</a>&nbsp</h2>
     <div>
         <dl>
+            <!-- UniCal -->
+            <dt class="miniheader"><a href="https://aaronlws95.github.io/projects.html#unical-modal" class="text">UniCal</a><span class="year">2023</span></dt>
+        <dt class="role">Researcher</dd>
+        <dd><b><a class="text" href="https://arxiv.org/abs/2304.09715">UniCal: a Single-Branch Transformer-Based Model for Camera-to-LiDAR Calibration and Validation</b></a> is a novel architecture for carrying out camera-to-LiDAR calibration and 
+            validation leveraging self-attention mechanisms using a Transformer-based network.</dd>            
             <!-- Without Abandonware -->
             <dt class="miniheader"><a href="https://aaronlws95.github.io/projects.html#wa-modal" class="text">Without
                     Abandonware</a><span class="year">2021</span></dt>
@@ -110,11 +115,11 @@ document.write(`
                 keyboard</dd>
             <!-- ParkWare -->
             <dt class="miniheader"><a href="https://aaronlws95.github.io/projects.html#pw-modal"
-                    class="text">ParkWare</a><span class="year">2016</span></dt>
-            <dt class="role">Web Developer</dd>
-            <dd><b>Prize Winner (“Best use of Amazon Web Services”)</b> Parking space detection web service using
-                machine
-                learning to detect cars in parking lots</dd>
+                class="text">ParkWare</a><span class="year">2016</span></dt>
+        <dt class="role">Web Developer</dd>
+        <dd><b>Prize Winner (“Best use of Amazon Web Services”)</b> Parking space detection web service using
+            machine
+            learning to detect cars in parking lots</dd>                
         </dl>
     </div>
     <hr>
@@ -174,7 +179,6 @@ document.write(`
     <h2>&nbspAdditional&nbsp</h2>
     <div>
         <p class="listheader">Languages: <span class="normal">English (Native) • Malay (limited working)</span></p>
-        <p class="listheader">Interests: <span class="normal">Bouldering • Yoga • Movies</span></p>
     </div>
     <hr>
 </body>
