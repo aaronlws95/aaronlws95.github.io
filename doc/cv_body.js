@@ -8,45 +8,16 @@ document.write(`
         <b>Website:</b> <a class="text" href="https://aaronlws95.github.io">aaronlws95.github.io</a>
     </div>
     <hr>
-    <!-- Education -->
-    <h2>&nbspEducation&nbsp</h2>
-    <div>
-        <dl>
-            <!-- Phd -->
-            <dt class="miniheader">Imperial College London<span class="year">2018 - 2019</span></dt>
-            <dt class="role">PhD in Machine Learning and Computer Vision (discontinued)</dd>
-            <dd><b>Supervisors:</b> <a href="https://www.imperial.ac.uk/people/tk.kim" class="text">Kim Tae-Kyun</a> and
-                <a href="http://personal.ie.cuhk.edu.hk/~ccloy/" class="text">Loy Chen Change</a>
-            </dd>
-            <dd><b>Research area:</b> 3D Pose Estimation</dd>
-            <!-- MEng -->
-            <dt class="miniheader"><a href="https://www.imperial.ac.uk/" class="text">Imperial College London</a> <span
-                    class="year">2014 - 2018</span></dt>
-            <dt class="role">Electrical and Electronic Engineering MEng</dd>
-            <dd><b>First Class Honours</b></dd>
-            <dd><b>Dean's List (top 10% of class) Year 2</b></dd>
-            <dd><b>Selected modules:</b> Linear Algebra • Probability and Stochastic Processes • Machine Learning •
-                Computer
-                Vision • Algorithms and Complexity
-                • Parallel Computing • Optimisation</dd>
-            <dd><b>Thesis:</b> <em><a class="text" href="doc/aaronlow_masters.pdf">Depth to Colour Translation for 3D
-                        Hand
-                        Pose Estimation From Monocular RGB With Generative Adversarial Networks</a></em></dd>
-            <!-- A-Levels -->
-            <dt class="miniheader">HELP Academy<span class="year">2013 - 2014</span></dt>
-            <dt class="role">Edexcel A-Levels</dd>
-            <dd><b>4 A*</b> Chemistry • Physics • Mathematics • Further Mathematics</dd>
-        </dl>
-    </div>
-    <hr>
     <!-- Work -->
     <h2>&nbspWork Experience&nbsp</h2>
     <div>
-        <dl>
-            <dt class="miniheader"><a href="https://www.motional.com/" class="text">Motional</a><span class="year">2020
-                    -
-                    Present</span></dt>
-            <dt class="role">Research Engineer (Sensor Calibration)</dd>
+        <dl>           
+            <!--Motional-->
+            <dt class="miniheader"><a href="https://www.motional.com/" class="text">Motional</a></dt>
+            <span class="year">2020 - 2023</span>
+            <dt class="role">Research Engineer (Sensor Calibration)</dt>
+            <span class="year">2023 - Present</span>
+            <dt class="role">Senior Research Engineer (Sensor Calibration)</dt>
             <dd>• Research and development of solutions for sensor (cameras, LIDARs, radars, IMU) calibration and validation
                 for
                 autonomous vehicles</dd>
@@ -78,6 +49,37 @@ document.write(`
         </dl>
     </div>
     <hr>
+    <!-- Education -->
+    <h2>&nbspEducation&nbsp</h2>
+    <div>
+        <dl>
+            <!-- Phd -->
+            <dt class="miniheader">Imperial College London<span class="year">2018 - 2019</span></dt>
+            <dt class="role">PhD in Machine Learning and Computer Vision (discontinued)</dd>
+            <dd><b>Supervisors:</b> <a href="https://www.imperial.ac.uk/people/tk.kim" class="text">Kim Tae-Kyun</a> and
+                <a href="http://personal.ie.cuhk.edu.hk/~ccloy/" class="text">Loy Chen Change</a>
+            </dd>
+            <dd><b>Research area:</b> 3D Pose Estimation</dd>
+            <!-- MEng -->
+            <dt class="miniheader"><a href="https://www.imperial.ac.uk/" class="text">Imperial College London</a> <span
+                    class="year">2014 - 2018</span></dt>
+            <dt class="role">Electrical and Electronic Engineering MEng</dd>
+            <dd><b>First Class Honours</b></dd>
+            <dd><b>Dean's List (top 10% of class) Year 2</b></dd>
+            <dd><b>Selected modules:</b> Linear Algebra • Probability and Stochastic Processes • Machine Learning •
+                Computer
+                Vision • Algorithms and Complexity
+                • Parallel Computing • Optimisation</dd>
+            <dd><b>Thesis:</b> <em><a class="text" href="https://github.com/aaronlws95/aaronlws95.github.io/blob/master/doc/aaronlow_masters.pdf">Depth to Colour Translation for 3D
+                        Hand
+                        Pose Estimation From Monocular RGB With Generative Adversarial Networks</a></em></dd>
+            <!-- A-Levels -->
+            <dt class="miniheader">HELP Academy<span class="year">2013 - 2014</span></dt>
+            <dt class="role">Edexcel A-Levels</dd>
+            <dd><b>4 A*</b> Chemistry • Physics • Mathematics • Further Mathematics</dd>
+        </dl>
+    </div>
+    <hr>    
     <!-- Projects -->
     <h2>&nbsp<a href="https://aaronlws95.github.io/projects.html">Projects</a>&nbsp</h2>
     <div>
@@ -129,6 +131,7 @@ document.write(`
         <p class="listheader">Programming: <span class="normal">Python • C++ • C# • SQL</span></p>
         <p class="listheader">Web Development: <span class="normal">HTML • CSS • JavaScript</span></p>
         <p class="listheader">Deep Learning: <span class="normal">PyTorch • TensorFlow • Keras • Pandas</span></p>
+        <p class="listheader">Cloud Development: <span class="normal">Serverless • AWS Services • Terraform</span></p>
         <p class="listheader">Other tools/frameworks: <span class="normal">Jenkins • lxc • ROS • docker • Bash • git •
                 Unity</span></p>
         <p class="listheader">Operating Systems: <span class="normal">Windows • Linux</span></p>
