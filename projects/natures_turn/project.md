@@ -1,0 +1,13 @@
+---
+tags:
+  - godot
+  - gamedev
+---
+
+<h2 class="project-title">Nature's Turn</h2>
+
+<img class="project-img" src="natures_turn2.png" alt="screenshot">
+
+<div class="project-summary">
+<b>Nature's Turn</b> is our entry to the <a href="https://itch.io/jam/gmtk-2023">GMTK Game Jam 2023</a> with the theme "Reversed Roles". The concept of the game is that you are playing as the environment in a turn based tactics game instead of the units. Your goal is to keep peace and prevent forests from destruction. The game was made over a weekend so we ended up not being able to implement all the features we wanted to. You can check the game out <a href="https://alghost.itch.io/natures-turn">here</a>!
+</div>
