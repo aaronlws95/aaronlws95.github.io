@@ -84,87 +84,9 @@ hr {
 }
 
 
-/* Project boxes*/
-.projrow{
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%
-}
-/* Clear floats after the columns */
-.projrow:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.proj{
-    position: relative;
-    float: left;
-    width: 31%;
-    margin-left: 1%;
-    margin-right: 1%;
-    text-align: center;
-}
-.proj img{
-    float: left;
-    width:  250px;
-    height: 250px;
-    border: solid #000000 5px;
-    text-align: center;
-}
-.proj .text{
-    position: absolute;
-    visibility: hidden;
-    float: left;
-    top: 40%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-}
-.proj .show-text{
-    position: absolute;
-    visibility: visible;
-    float: left;
-    top: 40%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-}
-#revgif:hover{
-    content: url('../img/revolver.gif');
-}
-#dagif:hover{
-    content: url('../img/drawingappdemo.gif');
-}
-#smgif:hover{
-    content: url('../img/supermiami.gif');
-}
-.proj:hover img{
-    opacity: 0.5;
-}
-.proj:hover .text{
-    visibility: visible;
-}
-#web-proj {
-    float: left;
-    width:  250px;
-    height: 250px;
-    border: solid #000000 5px;
-    text-align: center;
-    font-size: 3em;
-    background-color: black;
-    margin: auto;
-}
-#web-proj p{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-}
-#web-proj:hover {
-    background-color: white;
-}
-#web-proj:hover p{
-    color: black;
-}
+
+
+
 
 /* Links */
 a.text {

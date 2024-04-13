@@ -11,58 +11,146 @@
   <link rel="shortcut icon" href="img/avatarsmall.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/index.css" type="text/css" />
   <link rel="stylesheet" href="css/modal.css" type="text/css" />
+  <link rel="stylesheet" href="css/projects.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
   <title>Aaron's Projects</title>
 </head>
 
-  <!-- Body -->
+<!-- Body -->
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="projects.html">Projects</a></li>
+      <li><a href="web_cv.html" target="_blank">CV</a></li>
+      <li class="right marquee"><span>AARON LOW</span></li>
+    </ul>
+  </nav>
+  <!-- Title -->
+  <div class="title">
+    <h1>Projects</h1>
+  </div>
+  <div align=center>
+    Some of the projects I've worked on in the past. More projects can be found at my <a class="text"
+      href="https://github.com/aaronlws95">GitHub page</a>.
+  </div>
+  <hr>
 
-  <body>
+  <button class="active button-54" id="sidebar-button" onclick="toggleSidebar()">Tags</button>
 
 
-    <!-- Navigation bar -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="projects.html">Projects</a></li>
-        <li><a href="web_cv.html" target="_blank">CV</a></li>
-        <li class="right marquee"><span>AARON LOW</span></li>
-      </ul>
-    </nav>
-    <!-- Title -->
-    <div class="title">
-      <h1>Projects</h1>
+  <div class="container">
+  
+  <!-- Begin Filter Checkboxes -->
+  <div class="sidebar" id="sidebar">
+    <div class="filter-button-container">
+
+      <div class="filter-button">
+        <button class="active" id="godot-button" value="godot"
+          onclick="onFilterButtonPress('godot-button')">Godot</button>
+      </div>
+      <br>
+
+
+      <div class="filter-button">
+        <button class="active" id="gamedev-button" value="gamedev"
+          onclick="onFilterButtonPress('gamedev-button')">Gamedev</button>
+      </div>
+      <br>
+
+
+      <div class="filter-button">
+        <button class="active" id="python-button" value="python"
+          onclick="onFilterButtonPress('python-button')">Python</button>
+      </div>
+      <br>
+
+
+      <div class="filter-button">
+        <button class="active" id="pytorch-button" value="pytorch"
+          onclick="onFilterButtonPress('pytorch-button')">PyTorch</button>
+      </div>
+      <br>
+
+
+      <div class="filter-button">
+        <button class="active" id="deep-learning-button" value="deep-learning"
+          onclick="onFilterButtonPress('deep-learning-button')">Deep Learning</button>
+      </div>
+      <br>
+
     </div>
-    <div align=center>
-      Some of the projects I've worked on in the past. More projects can be found at my <a class="text"
-        href="https://github.com/aaronlws95">GitHub page</a>.
-    </div>
-    <hr>
+  </div>
+  <!-- End Filter Checkboxes -->
 
-    <!-- Content -->
-    <div id="content">
 
+
+
+
+
+  <!-- Begin Project Boxes -->
+  <div class="projbox-container">
+
+    <div class="projbox godot gamedev">
+      <p class="text">Nature's Turn</p>
+      <a href="#natures-turn-modal"><img src="projects/natures_turn/natures_turn.png" alt="natures-turn"></a>
     </div>
-  </body>
-  <!-- Footer -->
-  <footer>
-    <small>&copy; 2019-2024 Aaron Low</small>
-  </footer>
+
+
+    <div class="projbox python pytorch deep-learning">
+      <p class="text">UniCal</p>
+      <a href="#unical-modal"><img src="projects/unical/c2l.png" alt="unical"></a>
+    </div>
+
+  </div>
+  <!-- End Project Boxes -->
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<!-- Footer -->
+<footer>
+  <small>&copy; 2019-2024 Aaron Low</small>
+</footer>
 
 <!-- Begin Modals -->
 
-<div id="natures-turn-modal" class="open-modal">
+<div id="natures-turn-modal" class="modal">
   <div class="modal-container">
-    <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
-    </div>
     <div class="modal-content">
       <h2>Nature's Turn</h2>
       <hr>
-      <img src="natures_turn2.png" alt="screenshot">
+      <img src="projects/natures_turn/natures_turn2.png" alt="screenshot">
       <div class="modal-text">
         <p>
-        <b>Nature's Turn</b> is our entry to the <a href="https://itch.io/jam/gmtk-2023">GMTK Game Jam 2023</a> with the theme "Reversed Roles". The concept of the game is that you are playing as the environment in a turn based tactics game instead of the units. Your goal is to keep peace and prevent forests from destruction. The game was made over a weekend so we ended up not being able to implement all the features we wanted to. You can check the game out <a href="https://alghost.itch.io/natures-turn">here</a>!
+          <b>Nature's Turn</b> is our entry to the <a href="https://itch.io/jam/gmtk-2023">GMTK Game Jam 2023</a> with
+          the theme "Reversed Roles". The concept of the game is that you are playing as the environment in a turn based
+          tactics game instead of the units. Your goal is to keep peace and prevent forests from destruction. The game
+          was made over a weekend so we ended up not being able to implement all the features we wanted to. You can
+          check the game out <a href="https://alghost.itch.io/natures-turn">here</a>!
+
         </p>
         <p><b>Tags</b>: Godot, Gamedev</p>
       </div>
@@ -70,7 +158,60 @@
   </div>
 </div>
 
+
+<div id="unical-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-content">
+      <h2>UniCal</h2>
+      <hr>
+      <img src="projects/unical/UniCalDiagram.svg" alt="screenshot">
+      <div class="modal-text">
+        <p>
+          <b>UniCal: a Single-Branch Transformer-Based Model for Camera-to-LiDAR Calibration and Validation</b> is a
+          novel architecture for carrying out camera-to-LiDAR calibration and validation leveraging self-attention
+          mechanisms using a <a class="text" href="https://arxiv.org/abs/1706.03762">Transformer</a>-based network. The
+          work was carried out while working with the Calibration Team at <a class="text"
+            href="https://motional.com/">Motional</a>. You may read the full paper <a class="text"
+            href="https://arxiv.org/abs/2304.09715">here</a>!
+
+        </p>
+        <p><b>Tags</b>: Python, PyTorch, Deep Learning</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- End Modals -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

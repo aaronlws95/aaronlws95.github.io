@@ -1,0 +1,11 @@
+---
+title: UniCal
+modal_img_url: UniCalDiagram.svg
+projbox_img_url: c2l.png
+img_alt: screenshot
+summary: | 
+  <b>UniCal: a Single-Branch Transformer-Based Model for Camera-to-LiDAR Calibration and Validation</b> is a novel architecture for carrying out camera-to-LiDAR calibration and validation leveraging self-attention mechanisms using a <a class="text" href="https://arxiv.org/abs/1706.03762">Transformer</a>-based network. The work was carried out while working with the Calibration Team at <a class="text" href="https://motional.com/">Motional</a>. You may read the full paper <a class="text" href="https://arxiv.org/abs/2304.09715">here</a>!
+tags:
+  - Python
+  - PyTorch
+  - Deep Learning

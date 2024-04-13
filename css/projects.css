@@ -1,0 +1,169 @@
+.container {
+  display: flex;
+}
+
+
+.sidebar {
+  width: 200px;
+  padding: 10px;
+  background: white;
+  box-sizing: border-box; /* Includes padding in width calculation */
+  padding-left: 10px;
+  overflow: hidden; /* Hide content that overflows the sidebar */  
+}
+
+/* Collapsed state */
+.sidebar.collapsed {
+  visibility: hidden;
+}
+
+
+
+/* Project boxes*/
+.projbox-container{
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+#sidebar-button {
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.sidebar button {
+  display: block;
+  color: #111;
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+
+.sidebar button.active {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: solid #000000 2px;
+  background-color: #111
+}
+
+.sidebar button:hover{
+  background-color: #FFFFFF;
+  color: #111;
+}
+
+.projbox{
+  position: relative;
+  float: left;
+  width: 31%;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-align: center;
+  display: none /* Hidden by default */
+}
+.show-projbox{
+  display: block
+}
+.projbox img{
+  float: left;
+  width:  250px;
+  height: 250px;
+  border: solid #000000 5px;
+  text-align: center;
+}
+.projbox .text{
+  position: absolute;
+  visibility: hidden;
+  float: left;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+.projbox .show-text{
+  position: absolute;
+  visibility: visible;
+  float: left;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+#revgif:hover{
+  content: url('../img/revolver.gif');
+}
+#dagif:hover{
+  content: url('../img/drawingappdemo.gif');
+}
+#smgif:hover{
+  content: url('../img/supermiami.gif');
+}
+.projbox:hover img{
+  opacity: 0.5;
+}
+.projbox:hover .text{
+  visibility: visible;
+}
+#web-proj {
+  float: left;
+  width:  250px;
+  height: 250px;
+  border: solid #000000 5px;
+  text-align: center;
+  font-size: 3em;
+  background-color: black;
+  margin: auto;
+}
+#web-proj p{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+#web-proj:hover {
+  background-color: white;
+}
+#web-proj:hover p{
+  color: black;
+}
+
+/* CSS */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.button-54.active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
