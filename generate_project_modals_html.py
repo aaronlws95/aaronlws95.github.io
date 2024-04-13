@@ -8,7 +8,7 @@ modal_html_template = """
     <div class="modal-content">
       <h2>{title}</h2>
       <hr>
-      <img src="{modal_img_url}" alt="{img_alt}">
+      <img src="{modal_img_url}">
       <div class="modal-text">
         <p>
         {summary}
@@ -28,7 +28,7 @@ projbox_html_template = """
 """
 
 filter_button_template = """
-  <div class="filter-button">
+  <div class="tag-button">
     <button class="active" id="{tag_id}-button" value="{tag_id}" onclick="onFilterButtonPress('{tag_id}-button')">{tag}</button>
   </div>
   <br>
@@ -49,9 +49,9 @@ if __name__ == "__main__":
   end_projbox_marker = "<!-- End Project Boxes -->"
   projbox_html_string = f'{start_projbox_marker}\n<div class="projbox-container">\n'
 
-  start_filter_button_marker = "<!-- Begin Filter Checkboxes -->"
-  end_filter_button_marker = "<!-- End Filter Checkboxes -->"
-  filter_button_html_string = f'{start_filter_button_marker}\n<div class="sidebar">\n<div class="filter-button-container">\n'
+  start_filter_button_marker = "<!-- Begin Filter Buttons -->"
+  end_filter_button_marker = "<!-- End Filter Buttons -->"
+  filter_button_html_string = f'{start_filter_button_marker}\n<div id="tags-sidebar">\n<div class="tag-button-container">\n'
 
   added_tag = {}
   for file in Path("projects").glob("*/*.yaml"):
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
       project_id = lower_case_hyphenfy(project_info["title"])
       tags_comma = ", ".join(project_info["tags"])
-      modal_html = modal_html_template.format(id=project_id, title=project_info["title"], modal_img_url=file.parent/project_info["modal_img_url"], img_alt=project_info["img_alt"], summary=project_info["summary"], tags=tags_comma)
+      modal_html = modal_html_template.format(id=project_id, title=project_info["title"], modal_img_url=file.parent/project_info["modal_img_url"], summary=project_info["summary"], tags=tags_comma)
       modals_html_string += f"{modal_html}\n"
 
       tag_ids_space = " ".join([lower_case_hyphenfy(tag) for tag in project_info["tags"]])

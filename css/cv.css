@@ -5,14 +5,14 @@ body {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     width: 800px;
     margin: auto;
-    background: #FFFFFF;
+    background: white;
     padding: 10px 10px 10px 10px;
 }
 
 /* Main title */
 h1 {
     font-size: 55px;
-    color: #FFFFFF;
+    color: white;
     display: table;
     text-align: center;
     margin-left: auto;
@@ -22,7 +22,7 @@ h1 {
 }
 h1:hover {
     color: #000000;
-    background-color: #FFFFFF;
+    background-color: white;
 }
 
 /* Definition list */
@@ -38,31 +38,31 @@ img.circle {
 
 /* Titles of categories */
 h2 {
-    color: #FFFFFF;
+    color: white;
     display:table;
     background-color: #000000;
 }
 h2:hover {
     color: #000000;
-    background-color: #FFFFFF;
+    background-color: white;
 }
 
 /* Links */
 h1 a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: white;
 }
 h1 a:hover{
     text-decoration: none;
-    color: #111;
+    color: black;
 }
 h2 a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: white;
 }
 h2 a:hover{
     text-decoration: none;
-    color: #111;
+    color: black;
 }
 a.text {
     text-decoration: underline;
@@ -70,7 +70,7 @@ a.text {
 }
 a.text:hover, a.text:active {
     background-color: #000000;
-    color: #FFFFFF;
+    color: white;
     text-decoration: none;
     text-shadow: 1px 1px 1px #333;
 }

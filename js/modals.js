@@ -5,9 +5,9 @@ document.body.addEventListener('click', function (evt) {
 }, false);
 
 function toggleSidebar() {
-    var sidebar = document.getElementById("sidebar");
+    var sidebar = document.getElementById("tags-sidebar");
     sidebar.classList.toggle("collapsed");
-    var sidebarButton = document.getElementById("sidebar-button");
+    var sidebarButton = document.getElementById("sidebar-toggle-button");
     sidebarButton.classList.toggle("active");
 }
 
@@ -21,7 +21,7 @@ function onFilterButtonPress(id) {
 
 function filterSelection() {
     // Get the selected categories
-    var buttons = document.querySelectorAll(".filter-button-container button");
+    var buttons = document.querySelectorAll(".tag-button-container button");
     var categories = [];
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].classList.contains("active")) {
@@ -48,9 +48,6 @@ function filterSelection() {
         }
     }    
 }
-
-
-
 
 function onOutsideModalClick(evt) {
     if (evt.target.className !== 'modal' && evt.target !== document.body) {

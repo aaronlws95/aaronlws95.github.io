@@ -1,0 +1,9 @@
+---
+title: Katapat
+date: 2022-01-19
+modal_img_url: katapat.jpg
+projbox_img_url: katapat-300x300.png
+summary: | 
+  <b>Katapat</b> is a Malay language version of the popular word guessing game <a class="text" href="https://en.wikipedia.org/wiki/Wordle">Wordle</a>. During the development of the game, I assisted in procuring Malay words to add to the game's dictionary. I also wrote scripts to cross reference the words with the official Malay dictionary <a class="text" href="https://prpm.dbp.gov.my/">(Kamus Dewan)</a> to ensure their eligibility. You can play the game <a class="text" href="https://www.projecteugene.com/katapat.html">here</a>!
+tags:
+  - Python

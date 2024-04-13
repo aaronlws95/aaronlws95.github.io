@@ -1,83 +1,114 @@
 .container {
+  flex: 1;
   display: flex;
 }
 
-
+/* Sidebar */
 .sidebar {
-  width: 200px;
-  padding: 10px;
-  background: white;
-  box-sizing: border-box; /* Includes padding in width calculation */
-  padding-left: 10px;
-  overflow: hidden; /* Hide content that overflows the sidebar */  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Collapsed state */
-.sidebar.collapsed {
+/* Sidebar toggle button */
+#sidebar-toggle-button {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 10%;
+  width: 100px;
+  padding: 14px 16px;
+  text-align: center;
+  cursor: pointer;
+  background-color: black;
+}
+
+#sidebar-toggle-button.active {
+  background-color: white;
+  color: black;
+}
+
+/* Tags sidebar */
+#tags-sidebar {
+  width: 150px;
+  background: white;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#tags-sidebar.collapsed {
   visibility: hidden;
 }
 
-
-
-/* Project boxes*/
-.projbox-container{
-  flex: 1;
+/* Tags button */
+.tag-button {
   display: flex;
   justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  align-items: center;
 }
 
-#sidebar-button {
-  margin-left: 2%;
-  margin-bottom: 2%;
-}
-
-.sidebar button {
+.tag-button button {
+  cursor: pointer;
+  width: 100px;
   display: block;
-  color: #111;
+  color: black;
   text-align: center;
   font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: #FFFFFF;
+  background-color: white;
 }
 
-.sidebar button.active {
+.tag-button button.active {
   display: block;
-  color: #FFFFFF;
+  color: white;
   text-align: center;
   font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
   border: solid #000000 2px;
-  background-color: #111
+  background-color: black;
 }
 
-.sidebar button:hover{
-  background-color: #FFFFFF;
-  color: #111;
+/* .tag-button button:hover {
+  background-color: white;
+  color: black;
+} */
+
+/* Project boxes */
+.projbox-container {
+  flex: 1;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  flex-wrap: wrap;
 }
 
-.projbox{
+.projbox {
   position: relative;
   float: left;
   width: 31%;
   margin-left: 1%;
   margin-right: 1%;
   text-align: center;
-  display: none /* Hidden by default */
+  display: none;
 }
-.show-projbox{
-  display: block
+.show-projbox {
+  display: block;
 }
-.projbox img{
+.projbox img {
   float: left;
-  width:  250px;
+  width: 250px;
   height: 250px;
   border: solid #000000 5px;
   text-align: center;
 }
-.projbox .text{
+.projbox .text {
   position: absolute;
   visibility: hidden;
   float: left;
@@ -86,7 +117,7 @@
   transform: translate(-50%, -50%);
   font-size: 25px;
 }
-.projbox .show-text{
+.projbox .show-text {
   position: absolute;
   visibility: visible;
   float: left;
@@ -95,24 +126,24 @@
   transform: translate(-50%, -50%);
   font-size: 25px;
 }
-#revgif:hover{
-  content: url('../img/revolver.gif');
+#revgif:hover {
+  content: url("../img/revolver.gif");
 }
-#dagif:hover{
-  content: url('../img/drawingappdemo.gif');
+#dagif:hover {
+  content: url("../img/drawingappdemo.gif");
 }
-#smgif:hover{
-  content: url('../img/supermiami.gif');
+#smgif:hover {
+  content: url("../img/supermiami.gif");
 }
-.projbox:hover img{
+.projbox:hover img {
   opacity: 0.5;
 }
-.projbox:hover .text{
+.projbox:hover .text {
   visibility: visible;
 }
 #web-proj {
   float: left;
-  width:  250px;
+  width: 250px;
   height: 250px;
   border: solid #000000 5px;
   text-align: center;
@@ -120,7 +151,7 @@
   background-color: black;
   margin: auto;
 }
-#web-proj p{
+#web-proj p {
   display: inline-block;
   color: white;
   text-decoration: none;
@@ -128,42 +159,6 @@
 #web-proj:hover {
   background-color: white;
 }
-#web-proj:hover p{
+#web-proj:hover p {
   color: black;
-}
-
-/* CSS */
-.button-54 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  cursor: pointer;
-  border: 3px solid;
-  padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-54:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
-}
-
-.button-54.active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
-}
-
-@media (min-width: 768px) {
-  .button-54 {
-    padding: 0.25em 0.75em;
-  }
 }

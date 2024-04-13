@@ -12,9 +12,12 @@ html, body {
 }
 /* Page settings */
 body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     margin: auto;
-    background: #FFFFFF;
+    background: white;
 }
 
 /* Page title */
@@ -96,7 +99,7 @@ a.text {
 }
 a.text:hover, a.text:active {
     background-color: #000000;
-    color: #FFFFFF;
+    color: white;
     text-decoration: none;
     text-shadow: 1px 1px 1px #333;
 }
@@ -108,14 +111,14 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #111;
+    background-color: black;
 }
 nav li {
     float: left;
 }
 nav li a {
     display: block;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
     font-weight: bold;
     padding: 14px 16px;
@@ -124,26 +127,26 @@ nav li a {
 }
 nav li a.active {
     display: block;
-    color: #111;
+    color: black;
     text-align: center;
     font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #FFFFFF;
+    background-color: white;
 }
 nav li a:hover{
-    background-color: #FFFFFF;
-    color: #111;
+    background-color: white;
+    color: black;
 }
 nav:hover li a.active{
-    background-color: #111;
-    color: #FFFFFF;
+    background-color: black;
+    color: white;
 }
 /* For the AARON on the nav bar */
 nav li.right {
     float: right;
     display: block;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
     font-weight: bold;
     padding: 14px 16px;
@@ -177,8 +180,7 @@ img.circle {
     padding-right: 2%;
     padding-left: 2%;
 }
-footer small{
-    position: absolute;
+footer {
     bottom: 0;
     width :100%;
     background-color: black;

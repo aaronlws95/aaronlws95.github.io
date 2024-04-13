@@ -1,0 +1,10 @@
+---
+title: Twog
+date: 2021-05-15
+modal_img_url: twog_gif.gif
+projbox_img_url: twog.png
+summary: | 
+  <b>Twog</b> is an unfinished game and was developed while playing around with the <a class="text" href="https://github.com/shortgecko/MonocleEngineMirror">Monocle</a> game engine. The basic game concept is a top down shooter. Ultimately, the goal was to study the game engine. It was developed in C# using the <a class="text" href="https://www.monogame.net/">MonoGame</a> framework. The source code is available <a class="text" href="https://github.com/aaronlws95/twog">here</a>.
+tags:
+  - MonoGame
+  - C#

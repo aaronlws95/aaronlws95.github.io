@@ -37,74 +37,141 @@
   </div>
   <hr>
 
-  <button class="active button-54" id="sidebar-button" onclick="toggleSidebar()">Tags</button>
 
 
   <div class="container">
-  
-  <!-- Begin Filter Checkboxes -->
-  <div class="sidebar" id="sidebar">
-    <div class="filter-button-container">
 
-      <div class="filter-button">
-        <button class="active" id="godot-button" value="godot"
-          onclick="onFilterButtonPress('godot-button')">Godot</button>
-      </div>
-      <br>
+    <div class="sidebar">
+      <button class="active" id="sidebar-toggle-button" onclick="toggleSidebar()">Tags</button>
 
 
-      <div class="filter-button">
-        <button class="active" id="gamedev-button" value="gamedev"
-          onclick="onFilterButtonPress('gamedev-button')">Gamedev</button>
-      </div>
-      <br>
+      <!-- Begin Filter Buttons -->
+<div id="tags-sidebar">
+<div class="tag-button-container">
 
-
-      <div class="filter-button">
-        <button class="active" id="python-button" value="python"
-          onclick="onFilterButtonPress('python-button')">Python</button>
-      </div>
-      <br>
-
-
-      <div class="filter-button">
-        <button class="active" id="pytorch-button" value="pytorch"
-          onclick="onFilterButtonPress('pytorch-button')">PyTorch</button>
-      </div>
-      <br>
-
-
-      <div class="filter-button">
-        <button class="active" id="deep-learning-button" value="deep-learning"
-          onclick="onFilterButtonPress('deep-learning-button')">Deep Learning</button>
-      </div>
-      <br>
-
-    </div>
+  <div class="tag-button">
+    <button class="active" id="monogame-button" value="monogame" onclick="onFilterButtonPress('monogame-button')">MonoGame</button>
   </div>
-  <!-- End Filter Checkboxes -->
+  <br>
 
 
+  <div class="tag-button">
+    <button class="active" id="c-button" value="c" onclick="onFilterButtonPress('c-button')">C#</button>
+  </div>
+  <br>
 
 
+  <div class="tag-button">
+    <button class="active" id="deep-learning-button" value="deep-learning" onclick="onFilterButtonPress('deep-learning-button')">Deep Learning</button>
+  </div>
+  <br>
 
 
-  <!-- Begin Project Boxes -->
-  <div class="projbox-container">
-
-    <div class="projbox godot gamedev">
-      <p class="text">Nature's Turn</p>
-      <a href="#natures-turn-modal"><img src="projects/natures_turn/natures_turn.png" alt="natures-turn"></a>
-    </div>
+  <div class="tag-button">
+    <button class="active" id="python-button" value="python" onclick="onFilterButtonPress('python-button')">Python</button>
+  </div>
+  <br>
 
 
-    <div class="projbox python pytorch deep-learning">
-      <p class="text">UniCal</p>
-      <a href="#unical-modal"><img src="projects/unical/c2l.png" alt="unical"></a>
-    </div>
+  <div class="tag-button">
+    <button class="active" id="pytorch-button" value="pytorch" onclick="onFilterButtonPress('pytorch-button')">PyTorch</button>
+  </div>
+  <br>
+
+
+  <div class="tag-button">
+    <button class="active" id="webdev-button" value="webdev" onclick="onFilterButtonPress('webdev-button')">Webdev</button>
+  </div>
+  <br>
+
+
+  <div class="tag-button">
+    <button class="active" id="data-science-button" value="data-science" onclick="onFilterButtonPress('data-science-button')">Data Science</button>
+  </div>
+  <br>
+
+
+  <div class="tag-button">
+    <button class="active" id="godot-button" value="godot" onclick="onFilterButtonPress('godot-button')">Godot</button>
+  </div>
+  <br>
+
+
+  <div class="tag-button">
+    <button class="active" id="gamedev-button" value="gamedev" onclick="onFilterButtonPress('gamedev-button')">Gamedev</button>
+  </div>
+  <br>
+
+
+  <div class="tag-button">
+    <button class="active" id="unity-button" value="unity" onclick="onFilterButtonPress('unity-button')">Unity</button>
+  </div>
+  <br>
+
+</div>
+</div>
+<!-- End Filter Buttons -->
 
   </div>
-  <!-- End Project Boxes -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Begin Project Boxes -->
+<div class="projbox-container">
+
+  <div class="projbox monogame c">
+    <p class="text">Twog</p>
+    <a href="#twog-modal"><img src="projects/twog/twog.png" alt="twog"></a>
+  </div>
+
+
+  <div class="projbox deep-learning python pytorch webdev data-science">
+    <p class="text">Dog Breed Classifier</p>
+    <a href="#dog-breed-classifier-modal"><img src="projects/dog_breed_classifier/dog_breed_classifier.png" alt="dog-breed-classifier"></a>
+  </div>
+
+
+  <div class="projbox godot gamedev">
+    <p class="text">Nature's Turn</p>
+    <a href="#natures-turn-modal"><img src="projects/natures_turn/natures_turn.png" alt="natures-turn"></a>
+  </div>
+
+
+  <div class="projbox python">
+    <p class="text">Katapat</p>
+    <a href="#katapat-modal"><img src="projects/katapat/katapat-300x300.png" alt="katapat"></a>
+  </div>
+
+
+  <div class="projbox unity c">
+    <p class="text">Without Abandonware</p>
+    <a href="#without-abandonware-modal"><img src="projects/without_abandonware/without-abandonware2.jpeg" alt="without-abandonware"></a>
+  </div>
+
+
+  <div class="projbox python pytorch deep-learning">
+    <p class="text">UniCal</p>
+    <a href="#unical-modal"><img src="projects/unical/c2l.png" alt="unical"></a>
+  </div>
+
+</div>
+<!-- End Project Boxes -->
+
+
+
+
+
+
+
+
 
   </div>
 
@@ -127,32 +194,100 @@
 
 
 
-
-
-</body>
 <!-- Footer -->
 <footer>
   <small>&copy; 2019-2024 Aaron Low</small>
 </footer>
 
+
+</body>
+
 <!-- Begin Modals -->
+
+<div id="twog-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-content">
+      <h2>Twog</h2>
+      <hr>
+      <img src="projects/twog/twog_gif.gif">
+      <div class="modal-text">
+        <p>
+        <b>Twog</b> is an unfinished game and was developed while playing around with the <a class="text" href="https://github.com/shortgecko/MonocleEngineMirror">Monocle</a> game engine. The basic game concept is a top down shooter. Ultimately, the goal was to study the game engine. It was developed in C# using the <a class="text" href="https://www.monogame.net/">MonoGame</a> framework. The source code is available <a class="text" href="https://github.com/aaronlws95/twog">here</a>.
+
+        </p>
+        <p><b>Tags</b>: MonoGame, C#</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="dog-breed-classifier-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-content">
+      <h2>Dog Breed Classifier</h2>
+      <hr>
+      <img src="projects/dog_breed_classifier/dog_breed_classifier_2.png">
+      <div class="modal-text">
+        <p>
+        The <b>Dog Breed Classifier</b> was developed as as part of the <a class="text" href="https://www.udacity.com/course/data-scientist-nanodegree--nd025">Udacity Data Scientist Nanodegree</a>. For the project, I trained a convolutional neural network with transfer learning to classify the dog breeds while experimenting with different models and parameters. Additionally, I also developed a web application to run the classifier. You can read the project write-up <a class="text" href="https://aaronlws.medium.com/dog-breed-classification-app-udacity-dsnd-1a117cd90af9">here</a> or check out the code <a class="text" href="https://github.com/aaronlws95/udacity-dog-breed-classifier">here</a>!
+
+        </p>
+        <p><b>Tags</b>: Deep Learning, Python, PyTorch, Webdev, Data Science</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div id="natures-turn-modal" class="modal">
   <div class="modal-container">
     <div class="modal-content">
       <h2>Nature's Turn</h2>
       <hr>
-      <img src="projects/natures_turn/natures_turn2.png" alt="screenshot">
+      <img src="projects/natures_turn/natures_turn2.png">
       <div class="modal-text">
         <p>
-          <b>Nature's Turn</b> is our entry to the <a href="https://itch.io/jam/gmtk-2023">GMTK Game Jam 2023</a> with
-          the theme "Reversed Roles". The concept of the game is that you are playing as the environment in a turn based
-          tactics game instead of the units. Your goal is to keep peace and prevent forests from destruction. The game
-          was made over a weekend so we ended up not being able to implement all the features we wanted to. You can
-          check the game out <a href="https://alghost.itch.io/natures-turn">here</a>!
+        <b>Nature's Turn</b> is our entry to the <a href="https://itch.io/jam/gmtk-2023">GMTK Game Jam 2023</a> with the theme "Reversed Roles". The concept of the game is that you are playing as the environment in a turn based tactics game instead of the units. Your goal is to keep peace and prevent forests from destruction. The game was made over a weekend so we ended up not being able to implement all the features we wanted to. You can check the game out <a href="https://alghost.itch.io/natures-turn">here</a>!
 
         </p>
         <p><b>Tags</b>: Godot, Gamedev</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="katapat-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-content">
+      <h2>Katapat</h2>
+      <hr>
+      <img src="projects/katapat/katapat.jpg">
+      <div class="modal-text">
+        <p>
+        <b>Katapat</b> is a Malay language version of the popular word guessing game <a class="text" href="https://en.wikipedia.org/wiki/Wordle">Wordle</a>. During the development of the game, I assisted in procuring Malay words to add to the game's dictionary. I also wrote scripts to cross reference the words with the official Malay dictionary <a class="text" href="https://prpm.dbp.gov.my/">(Kamus Dewan)</a> to ensure their eligibility. You can play the game <a class="text" href="https://www.projecteugene.com/katapat.html">here</a>!
+
+        </p>
+        <p><b>Tags</b>: Python</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="without-abandonware-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-content">
+      <h2>Without Abandonware</h2>
+      <hr>
+      <img src="projects/without_abandonware/without-abandonware.jpeg">
+      <div class="modal-text">
+        <p>
+        <b>Without Abandonware</b> was developed as as an entry to the <a class="text" href="https://itch.io/jam/game-off-2021">Game Off 2021</a> game jam hosted. The game is a 2D platformer where the player is only allowed to change its current state. This was a collaborative project between three people where my main role was dealing with software development. You can try out the game <a class="text" href="https://aesaire.itch.io/withoutabandonware">here</a>. The game was also featured on the GitHub blog <a class="text" href="https://github.com/aaronlws95/udacity-dog-breed-classifier">here</a>! Finally, the source code is also open source and available <a class="text" href="https://github.com/aaronlws95/without_abandonware">here</a>.
+
+        </p>
+        <p><b>Tags</b>: Unity, C#</p>
       </div>
     </div>
   </div>
@@ -164,15 +299,10 @@
     <div class="modal-content">
       <h2>UniCal</h2>
       <hr>
-      <img src="projects/unical/UniCalDiagram.svg" alt="screenshot">
+      <img src="projects/unical/UniCalDiagram.svg">
       <div class="modal-text">
         <p>
-          <b>UniCal: a Single-Branch Transformer-Based Model for Camera-to-LiDAR Calibration and Validation</b> is a
-          novel architecture for carrying out camera-to-LiDAR calibration and validation leveraging self-attention
-          mechanisms using a <a class="text" href="https://arxiv.org/abs/1706.03762">Transformer</a>-based network. The
-          work was carried out while working with the Calibration Team at <a class="text"
-            href="https://motional.com/">Motional</a>. You may read the full paper <a class="text"
-            href="https://arxiv.org/abs/2304.09715">here</a>!
+        <b>UniCal: a Single-Branch Transformer-Based Model for Camera-to-LiDAR Calibration and Validation</b> is a novel architecture for carrying out camera-to-LiDAR calibration and validation leveraging self-attention mechanisms using a <a class="text" href="https://arxiv.org/abs/1706.03762">Transformer</a>-based network. The work was carried out while working with the Calibration Team at <a class="text" href="https://motional.com/">Motional</a>. You may read the full paper <a class="text" href="https://arxiv.org/abs/2304.09715">here</a>!
 
         </p>
         <p><b>Tags</b>: Python, PyTorch, Deep Learning</p>
@@ -182,6 +312,14 @@
 </div>
 
 <!-- End Modals -->
+
+
+
+
+
+
+
+
 
 
 
