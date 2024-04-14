@@ -1,5 +1,5 @@
-document.write(`
-<body>
+document.write(`<body>
+
     <!-- Name -->
     <h1>&nbspAaron Low Weng Soon&nbsp</h1>
     <!-- Personal Details -->
@@ -27,7 +27,7 @@ document.write(`
             <!--Aptiv-->
             <dt class="miniheader"><a href="https://www.aptiv.com/" class="text">Aptiv</a><span class="year">2020</span>
             </dt>
-            <dt class="role">Autonomous Vehicle Intern (Sensor Calibration)</dd>
+            <dt class="role">Autonomous Vehicle Intern (Sensor Calibration)</dt>
             <dd>• Implemented deep learning based methods for sensor (cameras, LIDARs) calibration for autonomous
                 vehicles
                 based on <a class="text" href="https://github.com/aaronlws95/regnet">RegNet</a></dd>
@@ -37,14 +37,14 @@ document.write(`
             <!-- Materialise -->
             <dt class="miniheader"><a href="https://www.materialise.com/en" class="text">Materialise</a><span
                     class="year">2016</span></dt>
-            <dt class="role">Software Engineer Intern</dd>
+            <dt class="role">Software Engineer Intern</dt>
             <dd>• <a class="text" href="https://aaronlws95.github.io/projects.html#da-modal">Designed and developed a
                     Microsoft Paint inspired application</a></dd>
             <dd>• Contributed to the development of 3D modelling software</dd>
             <!-- Accenture -->
             <dt class="miniheader"><a href="https://www.accenture.com/my-en" class="text">Accenture</a><span
                     class="year">2015</span></dt>
-            <dt class="role">Solution Architect Intern</dd>
+            <dt class="role">Solution Architect Intern</dt>
             <dd>Development of front end retail system dealing mainly with system analysis and testing</dd>
         </dl>
     </div>
@@ -55,7 +55,7 @@ document.write(`
         <dl>
             <!-- Phd -->
             <dt class="miniheader">Imperial College London<span class="year">2018 - 2019</span></dt>
-            <dt class="role">PhD in Machine Learning and Computer Vision (discontinued)</dd>
+            <dt class="role">PhD in Machine Learning and Computer Vision (discontinued)</dt>
             <dd><b>Supervisors:</b> <a href="https://www.imperial.ac.uk/people/tk.kim" class="text">Kim Tae-Kyun</a> and
                 <a href="http://personal.ie.cuhk.edu.hk/~ccloy/" class="text">Loy Chen Change</a>
             </dd>
@@ -63,19 +63,19 @@ document.write(`
             <!-- MEng -->
             <dt class="miniheader"><a href="https://www.imperial.ac.uk/" class="text">Imperial College London</a> <span
                     class="year">2014 - 2018</span></dt>
-            <dt class="role">Electrical and Electronic Engineering MEng</dd>
+            <dt class="role">Electrical and Electronic Engineering MEng</dt>
             <dd><b>First Class Honours</b></dd>
             <dd><b>Dean's List (top 10% of class) Year 2</b></dd>
             <dd><b>Selected modules:</b> Linear Algebra • Probability and Stochastic Processes • Machine Learning •
                 Computer
                 Vision • Algorithms and Complexity
                 • Parallel Computing • Optimisation</dd>
-            <dd><b>Thesis:</b> <em><a class="text" href="https://github.com/aaronlws95/aaronlws95.github.io/blob/master/doc/aaronlow_masters.pdf">Depth to Colour Translation for 3D
+            <dd><b>Thesis:</b> <em><a class="text" href="https://github.com/aaronlws95/aaronlws95.github.io/blob/master/cv/aaronlow_masters.pdf">Depth to Colour Translation for 3D
                         Hand
                         Pose Estimation From Monocular RGB With Generative Adversarial Networks</a></em></dd>
             <!-- A-Levels -->
             <dt class="miniheader">HELP Academy<span class="year">2013 - 2014</span></dt>
-            <dt class="role">Edexcel A-Levels</dd>
+            <dt class="role">Edexcel A-Levels</dt>
             <dd><b>4 A*</b> Chemistry • Physics • Mathematics • Further Mathematics</dd>
         </dl>
     </div>
@@ -86,13 +86,13 @@ document.write(`
         <dl>
             <!-- UniCal -->
             <dt class="miniheader"><a href="https://aaronlws95.github.io/projects.html#unical-modal" class="text">UniCal</a><span class="year">2023</span></dt>
-        <dt class="role">Researcher</dd>
+        <dt class="role">Researcher</dt>
         <dd><b><a class="text" href="https://arxiv.org/abs/2304.09715">UniCal: a Single-Branch Transformer-Based Model for Camera-to-LiDAR Calibration and Validation</b></a> is a novel architecture for carrying out camera-to-LiDAR calibration and 
-            validation leveraging self-attention mechanisms using a Transformer-based network.</dd>            
+            validation leveraging self-attention mechanisms using a Transformer-based network.</dt>            
             <!-- Without Abandonware -->
             <dt class="miniheader"><a href="https://aaronlws95.github.io/projects.html#wa-modal" class="text">Without
                     Abandonware</a><span class="year">2021</span></dt>
-            <dt class="role">Game Developer</dd>
+            <dt class="role">Game Developer</dt>
             <dd><b>Entry to the <a class="text" href="https://itch.io/jam/game-off-2021">Game Off 2021</a> game jam</b>
                 A 2D
                 platformer written in Unity with C#</dd>
@@ -100,7 +100,7 @@ document.write(`
             <dt class="miniheader"><a href="https://aaronlws95.github.io/projects.html#asda-modal"
                     class="text">Autonomous
                     Snack Delivery Android (ASDA)</a><span class="year">2017</span></dt>
-            <dt class="role">Development of Robot Navigation</dd>
+            <dt class="role">Development of Robot Navigation</dt>
             <dd>Autonomous robot that is capable of manoeuvring a building and taking an elevator to obtain and deliver
                 snacks
             </dd>
@@ -184,5 +184,5 @@ document.write(`
         <p class="listheader">Languages: <span class="normal">English (Native) • Malay (limited working)</span></p>
     </div>
     <hr>
-</body>
-`);
+
+</body>`)

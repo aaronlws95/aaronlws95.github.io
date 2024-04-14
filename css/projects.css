@@ -1,10 +1,13 @@
-.container {
+/* CSS for projects.html /*
+
+/* Container */
+#projects-container {
   flex: 1;
   display: flex;
 }
 
 /* Sidebar */
-.sidebar {
+#projects-container .sidebar {
   padding-top: 1%;
   display: flex;
   flex-direction: column;
@@ -27,7 +30,6 @@
   cursor: pointer;
   background-color: black;
 }
-
 #sidebar-toggle-button.active {
   background-color: white;
   color: black;
@@ -39,23 +41,19 @@
   background: white;
   box-sizing: border-box;
   overflow-x: hidden;
-  overflow-y: auto;
   height: 100vh;
   min-height: 100vh;
+  overflow-y: auto;
   scrollbar-width: none;
+  padding-bottom: 10px;
 }
 
-/* #tags-sidebar.collapsed {
-  visibility: hidden;
-} */
-
-/* Tags button */
+/* Tag buttons */
 .tag-button {
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center;
 }
-
 .tag-button button {
   cursor: pointer;
   width: 150px;
@@ -68,7 +66,6 @@
   border: solid #000000 2px;
   background-color: white;
 }
-
 .tag-button button.active {
   display: block;
   color: white;
@@ -80,27 +77,16 @@
   background-color: black;
 }
 
-/* .tag-button button:hover {
-  background-color: white;
-  color: black;
-} */
-
-/* Project boxes */
-/* .projbox-container {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-} */
-
+/* Gif that shows when all projects are toggled off */
 #no-project-gif {
   display: none;
 }
-#no-project-gif.show{
+#no-project-gif.show {
   display: block;
 }
 
-.project-container {
+/* Project boxes */
+.projects-content-container {
   flex: 1;
   flex-direction: column;
   display: flex;
@@ -126,11 +112,11 @@
 .projbox .text {
   font-size: 25px;
   visibility: hidden;
-
   /* To place text at center of image */
+  text-align: center;
   position: absolute;
   top: 40%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .projbox:hover img {
@@ -139,15 +125,8 @@
 .projbox:hover .text {
   visibility: visible;
 }
-/* .projbox .show-text {
-  position: absolute;
-  visibility: visible;
-  float: left;
-  top: 40%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-} */
+
+/* Custom Project Box Image Hover */
 #revolver-projbox-img:hover {
   content: url("../projects/revolver/revolver.gif");
 }
@@ -158,7 +137,49 @@
   content: url("../projects/super_miami/supermiami.gif");
 }
 
-#web-proj {
+/* Modals */
+[id*="modal"] {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+[id*="modal"]:target {
+  display: block;
+}
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: solid black 5px;
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+}
+.modal-content {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+}
+.modal-text {
+  text-align: justify;
+  margin-bottom: 10%;
+  padding-bottom: 1%;
+}
+.modal-exit {
+  position: relative;
+  float: right;
+}
+
+/* This Website */
+#this-website {
   float: left;
   width: 250px;
   height: 250px;
@@ -168,14 +189,72 @@
   background-color: black;
   margin: auto;
 }
-#web-proj p {
+#this-website p {
   display: inline-block;
   color: white;
   text-decoration: none;
 }
-#web-proj:hover {
+#this-website:hover {
   background-color: white;
 }
-#web-proj:hover p {
+#this-website:hover p {
   color: black;
+}
+
+/* Modal image styling */
+.neurospell-modal-img {
+  width: auto;
+  height: 50%;
+}
+/* @media screen and (max-width: 1200px) {
+  .neurospell-modal-img {
+    width: 50%;
+    height: auto;
+  }
+} */
+
+.twog-modal-img {
+  width: 80%;
+  height: auto;
+}
+.without-abandonware-modal-img {
+  width: 80%;
+  height: auto;
+}
+.heat-pipe-cooling-design-system-for-osram-led-luminaires-modal-img {
+  width: 80%;
+  height: auto;
+}
+.armadillo-modal-img {
+  width: 50%;
+  height: auto;
+  border: solid;
+}
+.emotional-rollercoaster-modal-img {
+  width: 50%;
+  height: auto;
+}
+.super-miami-modal-img {
+  width: 50%;
+  height: auto;
+}
+.drawing-application-modal-img {
+  width: 50%;
+  height: auto;
+}
+.revolver-modal-img {
+  width: 25%;
+  height: auto;
+}
+.parkware-modal-img {
+  width: 50%;
+  height: auto;
+}
+.eebug-modal-img {
+  width: 50%;
+  height: auto;
+}
+.untitled-modal-img {
+  width: 25%;
+  height: auto;
 }

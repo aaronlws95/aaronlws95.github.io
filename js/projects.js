@@ -15,6 +15,8 @@ document.body.addEventListener("keydown", function (e) {
 });
 function toggleSidebar() {
     var buttons = document.querySelectorAll(".tag-button-container button");
+
+    // Count number of buttons that are active
     var activeCount = 0;
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].classList.contains("active")) {
@@ -22,15 +24,26 @@ function toggleSidebar() {
         }
     }
 
-    var setActive = false;
-    if (activeCount < buttons.length / 2) {
-        setActive = true;
+    // Only remove all if all are active
+    var removeActive = false;
+    if (activeCount === buttons.length) {
+        removeActive = true;
     }
 
+    // Toggle sidebar button active
+    var sidebar = document.getElementById("sidebar-toggle-button");
+    if (removeActive) {
+        sidebar.classList.remove("active");
+    }
+    else {
+        sidebar.classList.add("active");
+    }
+
+    // Toggle tag buttons active
     for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].classList.contains("active") && !setActive) {
+        if (buttons[i].classList.contains("active") && removeActive) {
             buttons[i].classList.remove("active");
-        } else if (!buttons[i].classList.contains("active") && setActive) {
+        } else if (!buttons[i].classList.contains("active") && !removeActive) {
             buttons[i].classList.add("active");
         }
     }

@@ -7,11 +7,9 @@
   <!-- The above meta tags must come first in the head; any other head content must come after these tags -->
   <meta name="description" content="An Aaron Low Website">
   <meta name="author" content="Aaron Low">
-  <link rel="icon" href="img/avatarsmall.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="img/avatarsmall.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/index.css" type="text/css" />
-  <link rel="stylesheet" href="css/modal.css" type="text/css" />
-  <link rel="stylesheet" href="css/projects.css" type="text/css" />
+  <link rel="icon" href="imgs/avatarsmall.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="imgs/avatarsmall.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
   <title>Aaron's Projects</title>
 </head>
@@ -27,12 +25,11 @@
       <li class="right marquee"><span>AARON LOW</span></li>
     </ul>
   </nav>
-  <div class="container">
 
+  <!-- Content -->
+  <div id="projects-container">
     <div class="sidebar">
       <button class="active" id="sidebar-toggle-button" onclick="toggleSidebar()">Toggle</button>
-
-
       <!-- Begin Filter Buttons -->
 <div id="tags-sidebar">
 <div class="tag-button-container">
@@ -78,12 +75,12 @@
 <br>
 
 <div class="tag-button">
-  <button class="active" id="gamedev-button" value="gamedev" onclick="onFilterButtonPress('gamedev-button')">Gamedev</button>
+  <button class="active" id="gamemaker-button" value="gamemaker" onclick="onFilterButtonPress('gamemaker-button')">GameMaker</button>
 </div>
 <br>
 
 <div class="tag-button">
-  <button class="active" id="gamemaker-button" value="gamemaker" onclick="onFilterButtonPress('gamemaker-button')">Gamemaker</button>
+  <button class="active" id="gamedev-button" value="gamedev" onclick="onFilterButtonPress('gamedev-button')">Gamedev</button>
 </div>
 <br>
 
@@ -136,8 +133,7 @@
 <!-- End Filter Buttons -->
     </div> <!-- /sidebar -->
 
-
-    <div class="project-container">
+    <div class="projects-content-container">
       <!-- Title -->
       <div class="title-container">
         <div class="title">
@@ -150,7 +146,8 @@
         <hr>
       </div>
 
-      <img id="no-project-gif" src="img/cat.gif">
+      <!-- Gif that appears when all project boxes are toggled off -->
+      <img id="no-project-gif" src="imgs/cat.gif">
 
       <!-- Begin Project Boxes -->
 <div class="projbox-container">
@@ -187,7 +184,7 @@
 
 <div class="projbox webdev">
     <a href="index.html">
-    <div id="web-proj">
+    <div id="this-website">
         <p>This Website</p>
     </div>
     </a>
@@ -198,7 +195,7 @@
   <a href="#untitled-modal"><img id=untitled-projbox-img src="projects/untitled_game/newgame.jpg" alt="untitled"></a>
 </div>
 
-<div class="projbox robotics ros c++ python">
+<div class="projbox robotics ros c++ python electronics">
   <p class="text">Autonomous Snack Delivery Android</p>
   <a href="#autonomous-snack-delivery-android-modal"><img id=autonomous-snack-delivery-android-projbox-img src="projects/autonomous_snack_delivery_android/asda_cover.jpg" alt="autonomous-snack-delivery-android"></a>
 </div>
@@ -253,20 +250,20 @@
   </div>
 
 
-  <!-- Footer -->
-  <footer>
-    <small>&copy; 2019-2024 Aaron Low</small>
-  </footer>
-
 
 </body>
+
+<!-- Footer -->
+<footer>
+  <small>&copy; 2019-2024 Aaron Low</small>
+</footer>
 
 <!-- Begin Modals -->
 
 <div id="drawing-application-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Drawing Application</h2>
@@ -298,7 +295,7 @@
 <div id="super-miami-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Super Miami</h2>
@@ -308,7 +305,7 @@
       <div class="modal-text">
         <p><b>Super Miami</b> is a top-down shooter which combines aspects of <a class="text" href="https://en.wikipedia.org/wiki/Hotline_Miami">Hotline Miami</a> (top-down shooter) with <a class="text" href="https://en.wikipedia.org/wiki/Superhot">Superhot</a> (time within the game only progresses when the player moves). This game was developed during my time at the Game Development Society in Imperial as a collaboration between 2 people. </p>
 
-        <p><b>Tags</b>: Gamemaker, Gamedev</p>
+        <p><b>Tags</b>: GameMaker, Gamedev</p>
       </div>
     </div>
   </div>
@@ -317,7 +314,7 @@
 <div id="armadillo-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>ARMAdillo</h2>
@@ -337,7 +334,7 @@
 <div id="twog-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Twog</h2>
@@ -356,7 +353,7 @@
 <div id="dog-breed-classifier-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Dog Breed Classifier</h2>
@@ -375,7 +372,7 @@
 <div id="natures-turn-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Nature's Turn</h2>
@@ -394,7 +391,7 @@
 <div id="eebug-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>EEBug</h2>
@@ -414,7 +411,7 @@
 <div id="neurospell-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>NeuroSpell</h2>
@@ -435,7 +432,7 @@
 <div id="heat-pipe-cooling-design-system-for-osram-led-luminaires-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Heat Pipe Cooling Design System for Osram LED Luminaires</h2>
@@ -443,7 +440,7 @@
       <img class=heat-pipe-cooling-design-system-for-osram-led-luminaires-modal-img src="projects/led_heat_pipe_cooling/TGL2.png">
 
       <div class="modal-text">
-        <p><b>Heat Pipe Cooling Design System for Osram LED Luminaires</b> was developed as a collaborative effort in a team of 3 people while we were studying A-Levels. The project was carried out to participate in The Great Lab Challenge 2014 sponsored by Osram. The goal of this project was to propose a novel design for heat sinks in LEDs. During the project, each of us contributed to the research. I was also given the responsibility of designing the diagrams. <a class="text" href="doc/aaronlow_tgl.pdf">Check out the report!</a></p>
+        <p><b>Heat Pipe Cooling Design System for Osram LED Luminaires</b> was developed as a collaborative effort in a team of 3 people while we were studying A-Levels. The project was carried out to participate in The Great Lab Challenge 2014 sponsored by Osram. The goal of this project was to propose a novel design for heat sinks in LEDs. During the project, each of us contributed to the research. I was also given the responsibility of designing the diagrams. <a class="text" href="cv/aaronlow_tgl.pdf">Check out the report!</a></p>
 
         <p><b>Tags</b>: Thermodynamics</p>
       </div>
@@ -454,7 +451,7 @@
 <div id="revolver-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Revolver</h2>
@@ -473,7 +470,7 @@
 <div id="katapat-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Katapat</h2>
@@ -492,7 +489,7 @@
 <div id="parkware-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>ParkWare</h2>
@@ -511,7 +508,7 @@
 <div id="without-abandonware-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Without Abandonware</h2>
@@ -530,7 +527,7 @@
 <div id="untitled-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Untitled</h2>
@@ -549,7 +546,7 @@
 <div id="unical-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>UniCal</h2>
@@ -568,7 +565,7 @@
 <div id="emotional-rollercoaster-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Emotional Rollercoaster</h2>
@@ -588,7 +585,7 @@
 <div id="autonomous-snack-delivery-android-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>Autonomous Snack Delivery Android</h2>
@@ -599,70 +596,13 @@
         <p><b>ASDA (Autonomous Snack Delivery Android)</b> was developed as a collaborative effort in a team of 8 people as part of our third year group project at Imperial College London in 2016 supervised by Prof. <a class="text" href="http://www.imperial.ac.uk/people/p.kormushev">Petar Kormushev</a>. The goal of this project was to implement an autonomous snack delivery software that integrates with Robot DE NIRO, a modified version of <a class="text" href="http://www.rethinkrobotics.com/baxter/">Baxter</a> from the <a class="text" href="http://www.imperial.ac.uk/robot-intelligence/">Robot Intelligence Lab</a> at Imperial. During this project, I was in charge of implementing navigation and motion planning. </p>
 <p>DE NIRO was programmed to autonomously navigate our department building to buy snacks and bring it back to the user. We implemented a speech recognition system to take order, elevator button pressing based on visual servoing with floor recognition, robust collision avoidance, dynamic mapping and localization. <a class="text" href="https://www.youtube.com/watch?v=3VU_DWy4ZFs">Check out the demo!</a> </p>  
 
-        <p><b>Tags</b>: Robotics, ROS, C++, Python</p>
+        <p><b>Tags</b>: Robotics, ROS, C++, Python, Electronics</p>
       </div>
     </div>
   </div>
 </div>
 <!-- End Modals -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="js/modals.js"></script>
+<script src="js/projects.js"></script>
 
 </html>

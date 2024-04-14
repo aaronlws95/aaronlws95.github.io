@@ -8,7 +8,7 @@ modal_html_template = """
 <div id="{id}-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
     </div>
     <div class="modal-content">
       <h2>{title}</h2>
@@ -45,7 +45,7 @@ def lower_case_hyphenfy(title: str) -> str:
     return project_id
 
 
-if __name__ == "__main__":
+def generate_project_modals_html() -> None:
     start_modal_marker = "<!-- Begin Modals -->"
     end_modal_marker = "<!-- End Modals -->"
     modals_html_string = f"{start_modal_marker}\n"
@@ -64,14 +64,14 @@ if __name__ == "__main__":
         with open(file) as f:
             project_info = yaml.safe_load(f)
 
+        file_parent_path = file.parent
+
         project_id = lower_case_hyphenfy(project_info["title"])
         tags_comma = ", ".join(project_info["tags"])
 
         modal_imgs = ""
         for img_url in project_info["modal_img_url"]:
-            modal_imgs += (
-                f'<img class={project_id}-modal-img src="{file.parent}/{img_url}">\n'
-            )
+            modal_imgs += f'<img class={project_id}-modal-img src="{file_parent_path}/{img_url}">\n'
 
         modal_html = modal_html_template.format(
             id=project_id,
@@ -93,7 +93,8 @@ if __name__ == "__main__":
                     tags=tag_ids_space,
                     id=project_id,
                     title=project_info["title"],
-                    projbox_img_url=file.parent / project_info["projbox_img_url"],
+                    projbox_img_url=Path(file_parent_path)
+                    / project_info["projbox_img_url"],
                 ),
             )
         )
@@ -106,15 +107,13 @@ if __name__ == "__main__":
     this_website_proj_box_html = """
 <div class="projbox webdev">
     <a href="index.html">
-    <div id="web-proj">
+    <div id="this-website">
         <p>This Website</p>
     </div>
     </a>
 </div>
     """
-    projbox_html_data.append(
-        (datetime.date(2019, 1, 1), this_website_proj_box_html)
-    )
+    projbox_html_data.append((datetime.date(2019, 1, 1), this_website_proj_box_html))
 
     # List project boxes from most recent
     sorted_projbox_html_data = [
@@ -138,7 +137,8 @@ if __name__ == "__main__":
     filter_button_html_string += f"</div>\n</div>\n{end_filter_button_marker}"
 
     # Find the markers in the existing html and replace content
-    with open("projects.html", "r") as f:
+    projects_html_path = "projects.html"
+    with open(projects_html_path, "r") as f:
         projects_html_str = f.read()
         projects_html_str = re.sub(
             f"{start_modal_marker}(.*?){end_modal_marker}",
@@ -159,5 +159,28 @@ if __name__ == "__main__":
             flags=re.DOTALL,
         )
 
-    with open("projects.html", "w") as f:
+    with open(projects_html_path, "w") as f:
         f.write(projects_html_str)
+
+    print(f"--- Successfully generated content for {projects_html_path} ---")
+
+
+def concatenate_css() -> None:
+    disallowed_list = ["cv", "blog"]
+
+    with open("css/style.css", "w") as outfile:
+        for file in Path("css").glob("*.css"):
+            if file.stem in disallowed_list:
+                continue
+            with open(file, "r") as infile:
+                for line in infile:
+                    outfile.write(line)
+
+            outfile.write("\n")
+
+    print("--- Successfully concatenated css into style.css ---")
+
+
+if __name__ == "__main__":
+    generate_project_modals_html()
+    concatenate_css()
