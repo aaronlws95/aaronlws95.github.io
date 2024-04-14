@@ -5,9 +5,9 @@
 
 /* Sidebar */
 .sidebar {
+  padding-top: 1%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -35,16 +35,19 @@
 
 /* Tags sidebar */
 #tags-sidebar {
-  width: 150px;
+  width: 200px;
   background: white;
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
+  height: 100vh;
+  min-height: 100vh;
+  scrollbar-width: none;
 }
 
-#tags-sidebar.collapsed {
+/* #tags-sidebar.collapsed {
   visibility: hidden;
-}
+} */
 
 /* Tags button */
 .tag-button {
@@ -55,13 +58,14 @@
 
 .tag-button button {
   cursor: pointer;
-  width: 100px;
+  width: 150px;
   display: block;
   color: black;
   text-align: center;
   font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
+  border: solid #000000 2px;
   background-color: white;
 }
 
@@ -82,21 +86,32 @@
 } */
 
 /* Project boxes */
-.projbox-container {
+/* .projbox-container {
   flex: 1;
   display: flex;
-  align-items: center; /* Center content vertically */
+  align-items: center;
   flex-wrap: wrap;
+} */
+
+#no-project-gif {
+  display: none;
+}
+#no-project-gif.show{
+  display: block;
+}
+
+.project-container {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .projbox {
-  position: relative;
+  position: relative; /* Needs to be relative to place text at center of image */
   float: left;
-  width: 31%;
-  margin-left: 1%;
-  margin-right: 1%;
-  text-align: center;
-  display: none;
+  display: none; /* Hidden by default */
+  padding: 10px;
 }
 .show-projbox {
   display: block;
@@ -109,31 +124,14 @@
   text-align: center;
 }
 .projbox .text {
-  position: absolute;
+  font-size: 25px;
   visibility: hidden;
-  float: left;
-  top: 40%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-}
-.projbox .show-text {
+
+  /* To place text at center of image */
   position: absolute;
-  visibility: visible;
-  float: left;
   top: 40%;
   left: 45%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
-}
-#revgif:hover {
-  content: url("../img/revolver.gif");
-}
-#dagif:hover {
-  content: url("../img/drawingappdemo.gif");
-}
-#smgif:hover {
-  content: url("../img/supermiami.gif");
 }
 .projbox:hover img {
   opacity: 0.5;
@@ -141,6 +139,25 @@
 .projbox:hover .text {
   visibility: visible;
 }
+/* .projbox .show-text {
+  position: absolute;
+  visibility: visible;
+  float: left;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+} */
+#revolver-projbox-img:hover {
+  content: url("../projects/revolver/revolver.gif");
+}
+#drawing-application-projbox-img:hover {
+  content: url("../projects/drawing_application/drawingappdemo.gif");
+}
+#super-miami-projbox-img:hover {
+  content: url("../projects/super_miami/supermiami.gif");
+}
+
 #web-proj {
   float: left;
   width: 250px;

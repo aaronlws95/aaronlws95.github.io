@@ -1,0 +1,13 @@
+---
+title: ARMAdillo
+date: 2017-03-21
+modal_img_url: 
+  - armadillo_ss.jpg
+projbox_img_url: armadillo_ss.jpg
+summary: | 
+        <p><b>ARMadillo</b> is a cross-platform ARM emulator for assembling and simulating the ARM7TDMI instruction set built as part of the High Level Programming EE3-22 module at Imperial College London in 2017. My role in the project was the implementation of the ARM7TDMI instruction sets and emulator. I was also responsible for writing tests for the emulator functions. You can check it out on <a class="text" href="https://github.com/aaronlws95/hlp-project-2017">GitHub</a>!</p>
+        <p>ARMadillo was a collaborative effort in a team of 4 people. It was developed in F# with the GUI developed using HTML, CSS, and, JavaScript and draws inspiration from <a class="text" href="https://salmanarif.bitbucket.io/visual/">VisUAL</a>.</p>
+tags:
+  - F#
+  - Assembly
+  - Webdev

@@ -1,0 +1,12 @@
+---
+title: Untitled
+date: 2018-01-01
+modal_img_url: 
+  - proc_gen.gif
+projbox_img_url: newgame.jpg
+summary: | 
+  <p><b>Untitled</b> is an unfinished game developed in C# and Unity. The game is supposed to be roguelike-esque inspired by <a class="text" href="https://en.wikipedia.org/wiki/The_Binding_of_Isaac_(video_game)">The Binding of Isaac</a>. I implemented the base player movement, rooms, items and a random map generator.</p>
+tags:
+  - C#
+  - Unity
+  - Gamedev

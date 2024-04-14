@@ -1,0 +1,12 @@
+---
+title: Revolver
+date: 2017-04-06
+modal_img_url:
+  - revolver.gif
+projbox_img_url: revolver.jpg
+summary: |
+  <p><b>Revolver</b> is a simple puzzle game developed as a personal project and exercise in puzzle creation and game development. You only have two inputs: left and right and you're supposed to guide the hero to the key and to then to the exit. The game currently has 10 playable levels and is on <a href="https://github.com/aaronlws95/Revolver">GitHub</a>. It was developed in C# with <a class="text" href="https://www.monogame.net/">MonoGame</a>.</p>
+tags:
+  - C#
+  - MonoGame
+  - Gamedev

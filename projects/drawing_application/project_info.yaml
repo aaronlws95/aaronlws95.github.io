@@ -1,0 +1,23 @@
+---
+title: Drawing Application
+date: 2015-01-01
+modal_img_url: 
+  - drawingappdemo.gif
+projbox_img_url: DrawingApplication.jpg
+summary: | 
+        <p><b>Drawing Application</b> is a Microsoft Paint inspired drawing application developed during my internship at <a href="http://www.materialise.com/">Materialise Malaysia</a>. The project was a learning experience large scale object-oriented software development.</p>
+        <p><b>Features</b></p>
+        <ul>
+          <li>Draw line, circle, rectangle, polyline and polygon</li>
+          <li>Draw arbitary shape</li>
+          <li>Calculate properties of line, circle and rectangle </li>
+          <li>Colour outline, fill and unfill</li>
+          <li>Resize outline and shape</li>
+          <li>Save and load with choice of file extension</li>
+          <li>Undo and Redo</li>
+          <li>Delete</li>
+          <li>Regular select, Rectangular multi-select, Shift select</li>
+          <li>Drag and move</li>
+        </ul>
+tags:
+  - C++

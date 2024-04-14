@@ -1,0 +1,10 @@
+---
+title: ParkWare
+date: 2016-02-21
+modal_img_url:
+  - parkwaress.jpg
+projbox_img_url: parkwaress.jpg
+summary: |
+  <p><b>ParkWare</b> is a project developed during IC Hack 2016 (Imperial College London's Annual Hackathon). The idea was to use live surveillance of car parks paired together with machine learning and computer vision technology to provide users with live and accurate details of available parking spaces. This project was carried out in a team of 5 people where I acted as the web developer. It won the award for "Best use of Amazon Web Service (Cloud)" at the hackathon.</p>
+tags:
+  - Webdev

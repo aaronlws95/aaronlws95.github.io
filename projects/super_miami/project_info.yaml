@@ -1,0 +1,11 @@
+---
+title: Super Miami
+date: 2017-01-27
+modal_img_url: 
+  - supermiami.gif
+projbox_img_url: supermiami.jpg
+summary: | 
+  <p><b>Super Miami</b> is a top-down shooter which combines aspects of <a class="text" href="https://en.wikipedia.org/wiki/Hotline_Miami">Hotline Miami</a> (top-down shooter) with <a class="text" href="https://en.wikipedia.org/wiki/Superhot">Superhot</a> (time within the game only progresses when the player moves). This game was developed during my time at the Game Development Society in Imperial as a collaboration between 2 people. </p>
+tags:
+  - Gamemaker
+  - Gamedev

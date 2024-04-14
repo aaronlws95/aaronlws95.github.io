@@ -1,0 +1,12 @@
+---
+title: EEBug
+date: 2015-10-01
+modal_img_url: 
+  - eebugbreadboard.jpg
+projbox_img_url: EEBug.jpg
+summary: | 
+  <p><b>EEBug</b> is a line following robot developed as part of my first year project at Imperial College London in 2014. The project was carried out in a team of 5 people where I was designated project manager. I also contributed to the PSPICE simulation and implementing the line following algorithm in C.</p>
+  <p>The EEBug is controlled by an Atmel Attiny 85. To detect the line, the EEBug uses IR LEDs and detectors. The motors are driven using pulse width modulation. A voltage regulator is also implemented to prevent noisy voltage signals from being sent to the microcontroller.</p>
+tags:
+  - C
+  - Electronics

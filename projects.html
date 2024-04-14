@@ -27,291 +27,599 @@
       <li class="right marquee"><span>AARON LOW</span></li>
     </ul>
   </nav>
-  <!-- Title -->
-  <div class="title">
-    <h1>Projects</h1>
-  </div>
-  <div align=center>
-    Some of the projects I've worked on in the past. More projects can be found at my <a class="text"
-      href="https://github.com/aaronlws95">GitHub page</a>.
-  </div>
-  <hr>
-
-
-
   <div class="container">
 
     <div class="sidebar">
-      <button class="active" id="sidebar-toggle-button" onclick="toggleSidebar()">Tags</button>
+      <button class="active" id="sidebar-toggle-button" onclick="toggleSidebar()">Toggle</button>
 
 
       <!-- Begin Filter Buttons -->
 <div id="tags-sidebar">
 <div class="tag-button-container">
 
-  <div class="tag-button">
-    <button class="active" id="monogame-button" value="monogame" onclick="onFilterButtonPress('monogame-button')">MonoGame</button>
-  </div>
-  <br>
+<div class="tag-button">
+  <button class="active" id="assembly-button" value="assembly" onclick="onFilterButtonPress('assembly-button')">Assembly</button>
+</div>
+<br>
 
+<div class="tag-button">
+  <button class="active" id="c-button" value="c" onclick="onFilterButtonPress('c-button')">C</button>
+</div>
+<br>
 
-  <div class="tag-button">
-    <button class="active" id="c-button" value="c" onclick="onFilterButtonPress('c-button')">C#</button>
-  </div>
-  <br>
+<div class="tag-button">
+  <button class="active" id="c#-button" value="c#" onclick="onFilterButtonPress('c#-button')">C#</button>
+</div>
+<br>
 
+<div class="tag-button">
+  <button class="active" id="c++-button" value="c++" onclick="onFilterButtonPress('c++-button')">C++</button>
+</div>
+<br>
 
-  <div class="tag-button">
-    <button class="active" id="deep-learning-button" value="deep-learning" onclick="onFilterButtonPress('deep-learning-button')">Deep Learning</button>
-  </div>
-  <br>
+<div class="tag-button">
+  <button class="active" id="data-science-button" value="data-science" onclick="onFilterButtonPress('data-science-button')">Data Science</button>
+</div>
+<br>
 
+<div class="tag-button">
+  <button class="active" id="deep-learning-button" value="deep-learning" onclick="onFilterButtonPress('deep-learning-button')">Deep Learning</button>
+</div>
+<br>
 
-  <div class="tag-button">
-    <button class="active" id="python-button" value="python" onclick="onFilterButtonPress('python-button')">Python</button>
-  </div>
-  <br>
+<div class="tag-button">
+  <button class="active" id="electronics-button" value="electronics" onclick="onFilterButtonPress('electronics-button')">Electronics</button>
+</div>
+<br>
 
+<div class="tag-button">
+  <button class="active" id="f#-button" value="f#" onclick="onFilterButtonPress('f#-button')">F#</button>
+</div>
+<br>
 
-  <div class="tag-button">
-    <button class="active" id="pytorch-button" value="pytorch" onclick="onFilterButtonPress('pytorch-button')">PyTorch</button>
-  </div>
-  <br>
+<div class="tag-button">
+  <button class="active" id="gamedev-button" value="gamedev" onclick="onFilterButtonPress('gamedev-button')">Gamedev</button>
+</div>
+<br>
 
+<div class="tag-button">
+  <button class="active" id="gamemaker-button" value="gamemaker" onclick="onFilterButtonPress('gamemaker-button')">Gamemaker</button>
+</div>
+<br>
 
-  <div class="tag-button">
-    <button class="active" id="webdev-button" value="webdev" onclick="onFilterButtonPress('webdev-button')">Webdev</button>
-  </div>
-  <br>
+<div class="tag-button">
+  <button class="active" id="godot-button" value="godot" onclick="onFilterButtonPress('godot-button')">Godot</button>
+</div>
+<br>
 
+<div class="tag-button">
+  <button class="active" id="monogame-button" value="monogame" onclick="onFilterButtonPress('monogame-button')">MonoGame</button>
+</div>
+<br>
 
-  <div class="tag-button">
-    <button class="active" id="data-science-button" value="data-science" onclick="onFilterButtonPress('data-science-button')">Data Science</button>
-  </div>
-  <br>
+<div class="tag-button">
+  <button class="active" id="pytorch-button" value="pytorch" onclick="onFilterButtonPress('pytorch-button')">PyTorch</button>
+</div>
+<br>
 
+<div class="tag-button">
+  <button class="active" id="python-button" value="python" onclick="onFilterButtonPress('python-button')">Python</button>
+</div>
+<br>
 
-  <div class="tag-button">
-    <button class="active" id="godot-button" value="godot" onclick="onFilterButtonPress('godot-button')">Godot</button>
-  </div>
-  <br>
+<div class="tag-button">
+  <button class="active" id="ros-button" value="ros" onclick="onFilterButtonPress('ros-button')">ROS</button>
+</div>
+<br>
 
+<div class="tag-button">
+  <button class="active" id="robotics-button" value="robotics" onclick="onFilterButtonPress('robotics-button')">Robotics</button>
+</div>
+<br>
 
-  <div class="tag-button">
-    <button class="active" id="gamedev-button" value="gamedev" onclick="onFilterButtonPress('gamedev-button')">Gamedev</button>
-  </div>
-  <br>
+<div class="tag-button">
+  <button class="active" id="thermodynamics-button" value="thermodynamics" onclick="onFilterButtonPress('thermodynamics-button')">Thermodynamics</button>
+</div>
+<br>
 
+<div class="tag-button">
+  <button class="active" id="unity-button" value="unity" onclick="onFilterButtonPress('unity-button')">Unity</button>
+</div>
+<br>
 
-  <div class="tag-button">
-    <button class="active" id="unity-button" value="unity" onclick="onFilterButtonPress('unity-button')">Unity</button>
-  </div>
-  <br>
-
+<div class="tag-button">
+  <button class="active" id="webdev-button" value="webdev" onclick="onFilterButtonPress('webdev-button')">Webdev</button>
+</div>
+<br>
 </div>
 </div>
 <!-- End Filter Buttons -->
-
-  </div>
-
+    </div> <!-- /sidebar -->
 
 
+    <div class="project-container">
+      <!-- Title -->
+      <div class="title-container">
+        <div class="title">
+          <h1>Projects</h1>
+        </div><br>
+        <div align=center>
+          Some of the projects I've worked on in the past. More projects can be found at my <a class="text"
+            href="https://github.com/aaronlws95">GitHub page</a>.
+        </div>
+        <hr>
+      </div>
 
+      <img id="no-project-gif" src="img/cat.gif">
 
-
-
-
-
-
-
-    <!-- Begin Project Boxes -->
+      <!-- Begin Project Boxes -->
 <div class="projbox-container">
 
-  <div class="projbox monogame c">
-    <p class="text">Twog</p>
-    <a href="#twog-modal"><img src="projects/twog/twog.png" alt="twog"></a>
-  </div>
+<div class="projbox godot gamedev">
+  <p class="text">Nature's Turn</p>
+  <a href="#natures-turn-modal"><img id=natures-turn-projbox-img src="projects/natures_turn/natures_turn.png" alt="natures-turn"></a>
+</div>
 
+<div class="projbox python pytorch deep-learning">
+  <p class="text">UniCal</p>
+  <a href="#unical-modal"><img id=unical-projbox-img src="projects/unical/c2l.png" alt="unical"></a>
+</div>
 
-  <div class="projbox deep-learning python pytorch webdev data-science">
-    <p class="text">Dog Breed Classifier</p>
-    <a href="#dog-breed-classifier-modal"><img src="projects/dog_breed_classifier/dog_breed_classifier.png" alt="dog-breed-classifier"></a>
-  </div>
+<div class="projbox python gamedev">
+  <p class="text">Katapat</p>
+  <a href="#katapat-modal"><img id=katapat-projbox-img src="projects/katapat/katapat-300x300.png" alt="katapat"></a>
+</div>
 
+<div class="projbox unity c#">
+  <p class="text">Without Abandonware</p>
+  <a href="#without-abandonware-modal"><img id=without-abandonware-projbox-img src="projects/without_abandonware/without-abandonware2.jpeg" alt="without-abandonware"></a>
+</div>
 
-  <div class="projbox godot gamedev">
-    <p class="text">Nature's Turn</p>
-    <a href="#natures-turn-modal"><img src="projects/natures_turn/natures_turn.png" alt="natures-turn"></a>
-  </div>
+<div class="projbox deep-learning python pytorch webdev data-science">
+  <p class="text">Dog Breed Classifier</p>
+  <a href="#dog-breed-classifier-modal"><img id=dog-breed-classifier-projbox-img src="projects/dog_breed_classifier/dog_breed_classifier.png" alt="dog-breed-classifier"></a>
+</div>
 
+<div class="projbox monogame c# gamedev">
+  <p class="text">Twog</p>
+  <a href="#twog-modal"><img id=twog-projbox-img src="projects/twog/twog.png" alt="twog"></a>
+</div>
 
-  <div class="projbox python">
-    <p class="text">Katapat</p>
-    <a href="#katapat-modal"><img src="projects/katapat/katapat-300x300.png" alt="katapat"></a>
-  </div>
+<div class="projbox webdev">
+    <a href="index.html">
+    <div id="web-proj">
+        <p>This Website</p>
+    </div>
+    </a>
+</div>
+    
+<div class="projbox c# unity gamedev">
+  <p class="text">Untitled</p>
+  <a href="#untitled-modal"><img id=untitled-projbox-img src="projects/untitled_game/newgame.jpg" alt="untitled"></a>
+</div>
 
+<div class="projbox robotics ros c++ python">
+  <p class="text">Autonomous Snack Delivery Android</p>
+  <a href="#autonomous-snack-delivery-android-modal"><img id=autonomous-snack-delivery-android-projbox-img src="projects/autonomous_snack_delivery_android/asda_cover.jpg" alt="autonomous-snack-delivery-android"></a>
+</div>
 
-  <div class="projbox unity c">
-    <p class="text">Without Abandonware</p>
-    <a href="#without-abandonware-modal"><img src="projects/without_abandonware/without-abandonware2.jpeg" alt="without-abandonware"></a>
-  </div>
+<div class="projbox c# monogame gamedev">
+  <p class="text">Revolver</p>
+  <a href="#revolver-modal"><img id=revolver-projbox-img src="projects/revolver/revolver.jpg" alt="revolver"></a>
+</div>
 
+<div class="projbox c# electronics">
+  <p class="text">Emotional Rollercoaster</p>
+  <a href="#emotional-rollercoaster-modal"><img id=emotional-rollercoaster-projbox-img src="projects/emotional_rollercoaster/emocoaster.jpg" alt="emotional-rollercoaster"></a>
+</div>
 
-  <div class="projbox python pytorch deep-learning">
-    <p class="text">UniCal</p>
-    <a href="#unical-modal"><img src="projects/unical/c2l.png" alt="unical"></a>
-  </div>
+<div class="projbox f# assembly webdev">
+  <p class="text">ARMAdillo</p>
+  <a href="#armadillo-modal"><img id=armadillo-projbox-img src="projects/armadillo/armadillo_ss.jpg" alt="armadillo"></a>
+</div>
 
+<div class="projbox gamemaker gamedev">
+  <p class="text">Super Miami</p>
+  <a href="#super-miami-modal"><img id=super-miami-projbox-img src="projects/super_miami/supermiami.jpg" alt="super-miami"></a>
+</div>
+
+<div class="projbox python">
+  <p class="text">NeuroSpell</p>
+  <a href="#neurospell-modal"><img id=neurospell-projbox-img src="projects/neurospell/NeuroSpell.jpg" alt="neurospell"></a>
+</div>
+
+<div class="projbox webdev">
+  <p class="text">ParkWare</p>
+  <a href="#parkware-modal"><img id=parkware-projbox-img src="projects/parkware/parkwaress.jpg" alt="parkware"></a>
+</div>
+
+<div class="projbox c electronics">
+  <p class="text">EEBug</p>
+  <a href="#eebug-modal"><img id=eebug-projbox-img src="projects/eebug/EEBug.jpg" alt="eebug"></a>
+</div>
+
+<div class="projbox c++">
+  <p class="text">Drawing Application</p>
+  <a href="#drawing-application-modal"><img id=drawing-application-projbox-img src="projects/drawing_application/DrawingApplication.jpg" alt="drawing-application"></a>
+</div>
+
+<div class="projbox thermodynamics">
+  <p class="text">Heat Pipe Cooling Design System for Osram LED Luminaires</p>
+  <a href="#heat-pipe-cooling-design-system-for-osram-led-luminaires-modal"><img id=heat-pipe-cooling-design-system-for-osram-led-luminaires-projbox-img src="projects/led_heat_pipe_cooling/TGL.png" alt="heat-pipe-cooling-design-system-for-osram-led-luminaires"></a>
+</div>
 </div>
 <!-- End Project Boxes -->
-
-
-
-
-
-
-
-
-
+    </div>
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer -->
-<footer>
-  <small>&copy; 2019-2024 Aaron Low</small>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <small>&copy; 2019-2024 Aaron Low</small>
+  </footer>
 
 
 </body>
 
 <!-- Begin Modals -->
 
-<div id="twog-modal" class="modal">
+<div id="drawing-application-modal" class="modal">
   <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
     <div class="modal-content">
-      <h2>Twog</h2>
+      <h2>Drawing Application</h2>
       <hr>
-      <img src="projects/twog/twog_gif.gif">
-      <div class="modal-text">
-        <p>
-        <b>Twog</b> is an unfinished game and was developed while playing around with the <a class="text" href="https://github.com/shortgecko/MonocleEngineMirror">Monocle</a> game engine. The basic game concept is a top down shooter. Ultimately, the goal was to study the game engine. It was developed in C# using the <a class="text" href="https://www.monogame.net/">MonoGame</a> framework. The source code is available <a class="text" href="https://github.com/aaronlws95/twog">here</a>.
+      <img class=drawing-application-modal-img src="projects/drawing_application/drawingappdemo.gif">
 
-        </p>
-        <p><b>Tags</b>: MonoGame, C#</p>
+      <div class="modal-text">
+        <p><b>Drawing Application</b> is a Microsoft Paint inspired drawing application developed during my internship at <a href="http://www.materialise.com/">Materialise Malaysia</a>. The project was a learning experience large scale object-oriented software development.</p>
+<p><b>Features</b></p>
+<ul>
+  <li>Draw line, circle, rectangle, polyline and polygon</li>
+  <li>Draw arbitary shape</li>
+  <li>Calculate properties of line, circle and rectangle </li>
+  <li>Colour outline, fill and unfill</li>
+  <li>Resize outline and shape</li>
+  <li>Save and load with choice of file extension</li>
+  <li>Undo and Redo</li>
+  <li>Delete</li>
+  <li>Regular select, Rectangular multi-select, Shift select</li>
+  <li>Drag and move</li>
+</ul>
+
+        <p><b>Tags</b>: C++</p>
       </div>
     </div>
   </div>
 </div>
 
+<div id="super-miami-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>Super Miami</h2>
+      <hr>
+      <img class=super-miami-modal-img src="projects/super_miami/supermiami.gif">
+
+      <div class="modal-text">
+        <p><b>Super Miami</b> is a top-down shooter which combines aspects of <a class="text" href="https://en.wikipedia.org/wiki/Hotline_Miami">Hotline Miami</a> (top-down shooter) with <a class="text" href="https://en.wikipedia.org/wiki/Superhot">Superhot</a> (time within the game only progresses when the player moves). This game was developed during my time at the Game Development Society in Imperial as a collaboration between 2 people. </p>
+
+        <p><b>Tags</b>: Gamemaker, Gamedev</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="armadillo-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>ARMAdillo</h2>
+      <hr>
+      <img class=armadillo-modal-img src="projects/armadillo/armadillo_ss.jpg">
+
+      <div class="modal-text">
+        <p><b>ARMadillo</b> is a cross-platform ARM emulator for assembling and simulating the ARM7TDMI instruction set built as part of the High Level Programming EE3-22 module at Imperial College London in 2017. My role in the project was the implementation of the ARM7TDMI instruction sets and emulator. I was also responsible for writing tests for the emulator functions. You can check it out on <a class="text" href="https://github.com/aaronlws95/hlp-project-2017">GitHub</a>!</p>
+<p>ARMadillo was a collaborative effort in a team of 4 people. It was developed in F# with the GUI developed using HTML, CSS, and, JavaScript and draws inspiration from <a class="text" href="https://salmanarif.bitbucket.io/visual/">VisUAL</a>.</p>
+
+        <p><b>Tags</b>: F#, Assembly, Webdev</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="twog-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>Twog</h2>
+      <hr>
+      <img class=twog-modal-img src="projects/twog/twog_gif.gif">
+
+      <div class="modal-text">
+        <p><b>Twog</b> is an unfinished game and was developed while playing around with the <a class="text" href="https://github.com/shortgecko/MonocleEngineMirror">Monocle</a> game engine. The basic game concept is a top down shooter. Ultimately, the goal was to study the game engine. It was developed in C# using the <a class="text" href="https://www.monogame.net/">MonoGame</a> framework. The source code is available <a class="text" href="https://github.com/aaronlws95/twog">here</a>.</p>
+
+        <p><b>Tags</b>: MonoGame, C#, Gamedev</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="dog-breed-classifier-modal" class="modal">
   <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
     <div class="modal-content">
       <h2>Dog Breed Classifier</h2>
       <hr>
-      <img src="projects/dog_breed_classifier/dog_breed_classifier_2.png">
-      <div class="modal-text">
-        <p>
-        The <b>Dog Breed Classifier</b> was developed as as part of the <a class="text" href="https://www.udacity.com/course/data-scientist-nanodegree--nd025">Udacity Data Scientist Nanodegree</a>. For the project, I trained a convolutional neural network with transfer learning to classify the dog breeds while experimenting with different models and parameters. Additionally, I also developed a web application to run the classifier. You can read the project write-up <a class="text" href="https://aaronlws.medium.com/dog-breed-classification-app-udacity-dsnd-1a117cd90af9">here</a> or check out the code <a class="text" href="https://github.com/aaronlws95/udacity-dog-breed-classifier">here</a>!
+      <img class=dog-breed-classifier-modal-img src="projects/dog_breed_classifier/dog_breed_classifier_2.png">
 
-        </p>
+      <div class="modal-text">
+        <p>The <b>Dog Breed Classifier</b> was developed as as part of the <a class="text" href="https://www.udacity.com/course/data-scientist-nanodegree--nd025">Udacity Data Scientist Nanodegree</a>. For the project, I trained a convolutional neural network with transfer learning to classify the dog breeds while experimenting with different models and parameters. Additionally, I also developed a web application to run the classifier. You can read the project write-up <a class="text" href="https://aaronlws.medium.com/dog-breed-classification-app-udacity-dsnd-1a117cd90af9">here</a> or check out the code <a class="text" href="https://github.com/aaronlws95/udacity-dog-breed-classifier">here</a>!</p>
+
         <p><b>Tags</b>: Deep Learning, Python, PyTorch, Webdev, Data Science</p>
       </div>
     </div>
   </div>
 </div>
 
-
 <div id="natures-turn-modal" class="modal">
   <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
     <div class="modal-content">
       <h2>Nature's Turn</h2>
       <hr>
-      <img src="projects/natures_turn/natures_turn2.png">
-      <div class="modal-text">
-        <p>
-        <b>Nature's Turn</b> is our entry to the <a href="https://itch.io/jam/gmtk-2023">GMTK Game Jam 2023</a> with the theme "Reversed Roles". The concept of the game is that you are playing as the environment in a turn based tactics game instead of the units. Your goal is to keep peace and prevent forests from destruction. The game was made over a weekend so we ended up not being able to implement all the features we wanted to. You can check the game out <a href="https://alghost.itch.io/natures-turn">here</a>!
+      <img class=natures-turn-modal-img src="projects/natures_turn/natures_turn2.png">
 
-        </p>
+      <div class="modal-text">
+        <p><b>Nature's Turn</b> is our entry to the <a href="https://itch.io/jam/gmtk-2023">GMTK Game Jam 2023</a> with the theme "Reversed Roles". The concept of the game is that you are playing as the environment in a turn based tactics game instead of the units. Your goal is to keep peace and prevent forests from destruction. The game was made over a weekend so we ended up not being able to implement all the features we wanted to. You can check the game out <a href="https://alghost.itch.io/natures-turn">here</a>!</p>
+
         <p><b>Tags</b>: Godot, Gamedev</p>
       </div>
     </div>
   </div>
 </div>
 
-
-<div id="katapat-modal" class="modal">
+<div id="eebug-modal" class="modal">
   <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
     <div class="modal-content">
-      <h2>Katapat</h2>
+      <h2>EEBug</h2>
       <hr>
-      <img src="projects/katapat/katapat.jpg">
-      <div class="modal-text">
-        <p>
-        <b>Katapat</b> is a Malay language version of the popular word guessing game <a class="text" href="https://en.wikipedia.org/wiki/Wordle">Wordle</a>. During the development of the game, I assisted in procuring Malay words to add to the game's dictionary. I also wrote scripts to cross reference the words with the official Malay dictionary <a class="text" href="https://prpm.dbp.gov.my/">(Kamus Dewan)</a> to ensure their eligibility. You can play the game <a class="text" href="https://www.projecteugene.com/katapat.html">here</a>!
+      <img class=eebug-modal-img src="projects/eebug/eebugbreadboard.jpg">
 
-        </p>
+      <div class="modal-text">
+        <p><b>EEBug</b> is a line following robot developed as part of my first year project at Imperial College London in 2014. The project was carried out in a team of 5 people where I was designated project manager. I also contributed to the PSPICE simulation and implementing the line following algorithm in C.</p>
+<p>The EEBug is controlled by an Atmel Attiny 85. To detect the line, the EEBug uses IR LEDs and detectors. The motors are driven using pulse width modulation. A voltage regulator is also implemented to prevent noisy voltage signals from being sent to the microcontroller.</p>
+
+        <p><b>Tags</b>: C, Electronics</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="neurospell-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>NeuroSpell</h2>
+      <hr>
+      <img class=neurospell-modal-img src="projects/neurospell/neurospellbox.jpg">
+<img class=neurospell-modal-img src="projects/neurospell/neurospellui.jpg">
+
+      <div class="modal-text">
+        <p><b>NeuroSpell</b> is a low-cost brain computing interface that allows people suffering from motor impairment to type on computers by looking at an on-screen keyboard. The project was developed in a team of 7 people. My role in this project was developing the software in Python and interfacing with <a class="text" href="http://openvibe.inria.fr/">OpenViBE</a>. Check out our <a class="text" href="http://www.ee.ic.ac.uk/jorn.voegtli14/yr2proj/">website</a>!</p>
+<p>NeuroSpell consists of an EEG headset which records brain signals and a processing box which amplifies and filters the signal before being sent to our software interface. On the software side, the signal is processed with Linear Discriminant Analysis (LDA) to obtain the relevant signals which are generated by the user looking at a specific key on our flashing on-screen keyboard.</p>
+
         <p><b>Tags</b>: Python</p>
       </div>
     </div>
   </div>
 </div>
 
+<div id="heat-pipe-cooling-design-system-for-osram-led-luminaires-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>Heat Pipe Cooling Design System for Osram LED Luminaires</h2>
+      <hr>
+      <img class=heat-pipe-cooling-design-system-for-osram-led-luminaires-modal-img src="projects/led_heat_pipe_cooling/TGL2.png">
+
+      <div class="modal-text">
+        <p><b>Heat Pipe Cooling Design System for Osram LED Luminaires</b> was developed as a collaborative effort in a team of 3 people while we were studying A-Levels. The project was carried out to participate in The Great Lab Challenge 2014 sponsored by Osram. The goal of this project was to propose a novel design for heat sinks in LEDs. During the project, each of us contributed to the research. I was also given the responsibility of designing the diagrams. <a class="text" href="doc/aaronlow_tgl.pdf">Check out the report!</a></p>
+
+        <p><b>Tags</b>: Thermodynamics</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="revolver-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>Revolver</h2>
+      <hr>
+      <img class=revolver-modal-img src="projects/revolver/revolver.gif">
+
+      <div class="modal-text">
+        <p><b>Revolver</b> is a simple puzzle game developed as a personal project and exercise in puzzle creation and game development. You only have two inputs: left and right and you're supposed to guide the hero to the key and to then to the exit. The game currently has 10 playable levels and is on <a href="https://github.com/aaronlws95/Revolver">GitHub</a>. It was developed in C# with <a class="text" href="https://www.monogame.net/">MonoGame</a>.</p>
+
+        <p><b>Tags</b>: C#, MonoGame, Gamedev</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="katapat-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>Katapat</h2>
+      <hr>
+      <img class=katapat-modal-img src="projects/katapat/katapat.jpg">
+
+      <div class="modal-text">
+        <p><b>Katapat</b> is a Malay language version of the popular word guessing game <a class="text" href="https://en.wikipedia.org/wiki/Wordle">Wordle</a>. During the development of the game, I assisted in procuring Malay words to add to the game's dictionary. I also wrote scripts to cross reference the words with the official Malay dictionary <a class="text" href="https://prpm.dbp.gov.my/">(Kamus Dewan)</a> to ensure their eligibility. You can play the game <a class="text" href="https://www.projecteugene.com/katapat.html">here</a>!</p>
+
+        <p><b>Tags</b>: Python, Gamedev</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="parkware-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>ParkWare</h2>
+      <hr>
+      <img class=parkware-modal-img src="projects/parkware/parkwaress.jpg">
+
+      <div class="modal-text">
+        <p><b>ParkWare</b> is a project developed during IC Hack 2016 (Imperial College London's Annual Hackathon). The idea was to use live surveillance of car parks paired together with machine learning and computer vision technology to provide users with live and accurate details of available parking spaces. This project was carried out in a team of 5 people where I acted as the web developer. It won the award for "Best use of Amazon Web Service (Cloud)" at the hackathon.</p>
+
+        <p><b>Tags</b>: Webdev</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="without-abandonware-modal" class="modal">
   <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
     <div class="modal-content">
       <h2>Without Abandonware</h2>
       <hr>
-      <img src="projects/without_abandonware/without-abandonware.jpeg">
-      <div class="modal-text">
-        <p>
-        <b>Without Abandonware</b> was developed as as an entry to the <a class="text" href="https://itch.io/jam/game-off-2021">Game Off 2021</a> game jam hosted. The game is a 2D platformer where the player is only allowed to change its current state. This was a collaborative project between three people where my main role was dealing with software development. You can try out the game <a class="text" href="https://aesaire.itch.io/withoutabandonware">here</a>. The game was also featured on the GitHub blog <a class="text" href="https://github.com/aaronlws95/udacity-dog-breed-classifier">here</a>! Finally, the source code is also open source and available <a class="text" href="https://github.com/aaronlws95/without_abandonware">here</a>.
+      <img class=without-abandonware-modal-img src="projects/without_abandonware/without-abandonware.jpeg">
 
-        </p>
+      <div class="modal-text">
+        <p><b>Without Abandonware</b> was developed as as an entry to the <a class="text" href="https://itch.io/jam/game-off-2021">Game Off 2021</a> game jam hosted. The game is a 2D platformer where the player is only allowed to change its current state. This was a collaborative project between three people where my main role was dealing with software development. You can try out the game <a class="text" href="https://aesaire.itch.io/withoutabandonware">here</a>. The game was also featured on the GitHub blog <a class="text" href="https://github.com/aaronlws95/udacity-dog-breed-classifier">here</a>! Finally, the source code is also open source and available <a class="text" href="https://github.com/aaronlws95/without_abandonware">here</a>.</p>
+
         <p><b>Tags</b>: Unity, C#</p>
       </div>
     </div>
   </div>
 </div>
 
+<div id="untitled-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>Untitled</h2>
+      <hr>
+      <img class=untitled-modal-img src="projects/untitled_game/proc_gen.gif">
+
+      <div class="modal-text">
+        <p><b>Untitled</b> is an unfinished game developed in C# and Unity. The game is supposed to be roguelike-esque inspired by <a class="text" href="https://en.wikipedia.org/wiki/The_Binding_of_Isaac_(video_game)">The Binding of Isaac</a>. I implemented the base player movement, rooms, items and a random map generator.</p>
+
+        <p><b>Tags</b>: C#, Unity, Gamedev</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="unical-modal" class="modal">
   <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
     <div class="modal-content">
       <h2>UniCal</h2>
       <hr>
-      <img src="projects/unical/UniCalDiagram.svg">
-      <div class="modal-text">
-        <p>
-        <b>UniCal: a Single-Branch Transformer-Based Model for Camera-to-LiDAR Calibration and Validation</b> is a novel architecture for carrying out camera-to-LiDAR calibration and validation leveraging self-attention mechanisms using a <a class="text" href="https://arxiv.org/abs/1706.03762">Transformer</a>-based network. The work was carried out while working with the Calibration Team at <a class="text" href="https://motional.com/">Motional</a>. You may read the full paper <a class="text" href="https://arxiv.org/abs/2304.09715">here</a>!
+      <img class=unical-modal-img src="projects/unical/UniCalDiagram.svg">
 
-        </p>
+      <div class="modal-text">
+        <p><b>UniCal: a Single-Branch Transformer-Based Model for Camera-to-LiDAR Calibration and Validation</b> is a novel architecture for carrying out camera-to-LiDAR calibration and validation leveraging self-attention mechanisms using a <a class="text" href="https://arxiv.org/abs/1706.03762">Transformer</a>-based network. The work was carried out while working with the Calibration Team at <a class="text" href="https://motional.com/">Motional</a>. You may read the full paper <a class="text" href="https://arxiv.org/abs/2304.09715">here</a>!</p>
+
         <p><b>Tags</b>: Python, PyTorch, Deep Learning</p>
       </div>
     </div>
   </div>
 </div>
 
+<div id="emotional-rollercoaster-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>Emotional Rollercoaster</h2>
+      <hr>
+      <img class=emotional-rollercoaster-modal-img src="projects/emotional_rollercoaster/emocoasterss.jpg">
+
+      <div class="modal-text">
+        <p><b>Emotional Rollercoaster</b> is a game where players try to match their emotions with a randomly generated emotion to move a "rollercoaster" (remote controlled car). It was built during IC Hack 2017 (Imperial College London's Annual Hackathon). I was the lead C# developer during this project in charge of integrating the emotion detection algorithm and designing the system. You can find out more and watch a video <a class="text" href="https://devpost.com/software/emotional-rollercoaster-hfzrq8">here</a>!</p>
+<p>This project was a collaborative effort in a team of 5 people. The software was developed in C# with the help of <a class="text" href="https://www.microsoft.com/cognitive-services">Microsoft Cognitive Services</a>. The "rollercoaster" was developed by hacking a toy remote controlled car and integrating it with an arduino. This project won the runner-up prize for "Best Game" at the hackathon.</p>      
+
+        <p><b>Tags</b>: C#, Electronics</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="autonomous-snack-delivery-android-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-exit">
+      <a href="#"><img src="img/xbutton.svg" alt="x" width="25px" height="25px"></a>
+    </div>
+    <div class="modal-content">
+      <h2>Autonomous Snack Delivery Android</h2>
+      <hr>
+      <img class=autonomous-snack-delivery-android-modal-img src="projects/autonomous_snack_delivery_android/deniro.jpg">
+
+      <div class="modal-text">
+        <p><b>ASDA (Autonomous Snack Delivery Android)</b> was developed as a collaborative effort in a team of 8 people as part of our third year group project at Imperial College London in 2016 supervised by Prof. <a class="text" href="http://www.imperial.ac.uk/people/p.kormushev">Petar Kormushev</a>. The goal of this project was to implement an autonomous snack delivery software that integrates with Robot DE NIRO, a modified version of <a class="text" href="http://www.rethinkrobotics.com/baxter/">Baxter</a> from the <a class="text" href="http://www.imperial.ac.uk/robot-intelligence/">Robot Intelligence Lab</a> at Imperial. During this project, I was in charge of implementing navigation and motion planning. </p>
+<p>DE NIRO was programmed to autonomously navigate our department building to buy snacks and bring it back to the user. We implemented a speech recognition system to take order, elevator button pressing based on visual servoing with floor recognition, robust collision avoidance, dynamic mapping and localization. <a class="text" href="https://www.youtube.com/watch?v=3VU_DWy4ZFs">Check out the demo!</a> </p>  
+
+        <p><b>Tags</b>: Robotics, ROS, C++, Python</p>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- End Modals -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

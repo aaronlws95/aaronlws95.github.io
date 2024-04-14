@@ -1,10 +1,11 @@
 ---
 title: Without Abandonware
 date: 2021-12-01
-modal_img_url: without-abandonware.jpeg
+modal_img_url: 
+  - without-abandonware.jpeg
 projbox_img_url: without-abandonware2.jpeg
 summary: | 
-  <b>Without Abandonware</b> was developed as as an entry to the <a class="text" href="https://itch.io/jam/game-off-2021">Game Off 2021</a> game jam hosted. The game is a 2D platformer where the player is only allowed to change its current state. This was a collaborative project between three people where my main role was dealing with software development. You can try out the game <a class="text" href="https://aesaire.itch.io/withoutabandonware">here</a>. The game was also featured on the GitHub blog <a class="text" href="https://github.com/aaronlws95/udacity-dog-breed-classifier">here</a>! Finally, the source code is also open source and available <a class="text" href="https://github.com/aaronlws95/without_abandonware">here</a>.
+  <p><b>Without Abandonware</b> was developed as as an entry to the <a class="text" href="https://itch.io/jam/game-off-2021">Game Off 2021</a> game jam hosted. The game is a 2D platformer where the player is only allowed to change its current state. This was a collaborative project between three people where my main role was dealing with software development. You can try out the game <a class="text" href="https://aesaire.itch.io/withoutabandonware">here</a>. The game was also featured on the GitHub blog <a class="text" href="https://github.com/aaronlws95/udacity-dog-breed-classifier">here</a>! Finally, the source code is also open source and available <a class="text" href="https://github.com/aaronlws95/without_abandonware">here</a>.</p>
 tags:
   - Unity
   - C#

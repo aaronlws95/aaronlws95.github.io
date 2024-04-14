@@ -1,0 +1,12 @@
+---
+title: Emotional Rollercoaster
+date: 2017-04-04
+modal_img_url: 
+  - emocoasterss.jpg
+projbox_img_url: emocoaster.jpg
+summary: | 
+        <p><b>Emotional Rollercoaster</b> is a game where players try to match their emotions with a randomly generated emotion to move a "rollercoaster" (remote controlled car). It was built during IC Hack 2017 (Imperial College London's Annual Hackathon). I was the lead C# developer during this project in charge of integrating the emotion detection algorithm and designing the system. You can find out more and watch a video <a class="text" href="https://devpost.com/software/emotional-rollercoaster-hfzrq8">here</a>!</p>
+        <p>This project was a collaborative effort in a team of 5 people. The software was developed in C# with the help of <a class="text" href="https://www.microsoft.com/cognitive-services">Microsoft Cognitive Services</a>. The "rollercoaster" was developed by hacking a toy remote controlled car and integrating it with an arduino. This project won the runner-up prize for "Best Game" at the hackathon.</p>      
+tags:
+  - C#
+  - Electronics

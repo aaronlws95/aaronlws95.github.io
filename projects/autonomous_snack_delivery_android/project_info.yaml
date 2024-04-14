@@ -1,0 +1,14 @@
+---
+title: Autonomous Snack Delivery Android
+date: 2017-09-27
+modal_img_url: 
+  - deniro.jpg
+projbox_img_url: asda_cover.jpg
+summary: | 
+        <p><b>ASDA (Autonomous Snack Delivery Android)</b> was developed as a collaborative effort in a team of 8 people as part of our third year group project at Imperial College London in 2016 supervised by Prof. <a class="text" href="http://www.imperial.ac.uk/people/p.kormushev">Petar Kormushev</a>. The goal of this project was to implement an autonomous snack delivery software that integrates with Robot DE NIRO, a modified version of <a class="text" href="http://www.rethinkrobotics.com/baxter/">Baxter</a> from the <a class="text" href="http://www.imperial.ac.uk/robot-intelligence/">Robot Intelligence Lab</a> at Imperial. During this project, I was in charge of implementing navigation and motion planning. </p>
+        <p>DE NIRO was programmed to autonomously navigate our department building to buy snacks and bring it back to the user. We implemented a speech recognition system to take order, elevator button pressing based on visual servoing with floor recognition, robust collision avoidance, dynamic mapping and localization. <a class="text" href="https://www.youtube.com/watch?v=3VU_DWy4ZFs">Check out the demo!</a> </p>  
+tags:
+  - Robotics
+  - ROS
+  - C++
+  - Python
