@@ -71,81 +71,6 @@
     max-width: 50%;
     }
 }
-
-/* Size change compatibility */
-/* @media screen and (max-width: 1000px) {
-  #facecolumn {
-    float: none;
-    margin: auto;
-  }
-  #textcolumn {
-    float: none;
-    margin: auto;
-    text-align: justify;
-  }
-  .proj {
-    float: none;
-    margin: auto;
-    margin-bottom: 10%;
-    text-align: center;
-    width: 100%;
-  }
-  .proj img {
-    display: block;
-    float: none;
-    margin: auto;
-  }
-  .proj .text {
-    position: absolute;
-    visibility: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    float: none;
-    margin: auto;
-  }
-  .proj .show-text {
-    position: absolute;
-    visibility: visible;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    float: none;
-    margin: auto;
-  }
-  nav li {
-    width: 33.33%;
-    float: left;
-  }
-  #this-website {
-    float: none;
-    width: 250px;
-    height: 250px;
-    border: solid #000000 5px;
-    text-align: center;
-    font-size: 3em;
-    background-color: black;
-    margin: auto;
-  }
-  .marquee {
-    width: 100%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  @keyframes marquee {
-    0% {
-      transform: translate(0%, 0);
-    }
-    100% {
-      transform: translate(-100%, 0);
-    }
-  }
-} */
-
 /* CSS for overall website */
 
 /* Fix overall position of website */
@@ -415,7 +340,6 @@ footer {
   text-align: center;
   font-size: 3em;
   background-color: black;
-  margin: auto;
 }
 #this-website p {
   display: inline-block;
@@ -429,18 +353,18 @@ footer {
   color: black;
 }
 
+/* Modal x button */
+.modal-x-button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
 /* Modal image styling */
 .neurospell-modal-img {
   width: auto;
   height: 50%;
 }
-/* @media screen and (max-width: 1200px) {
-  .neurospell-modal-img {
-    width: 50%;
-    height: auto;
-  }
-} */
-
 .twog-modal-img {
   width: 80%;
   height: auto;
@@ -500,6 +424,16 @@ footer {
   .projbox-container {
     padding-bottom: 3%;
   }
+
+  #this-website {
+    float: none;
+  }
+
+  [class*="-modal-img"] {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 /* CSS for the navigation bar */

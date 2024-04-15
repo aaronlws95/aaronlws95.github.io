@@ -8,7 +8,7 @@ modal_html_template = """
 <div id="{id}-modal" class="modal">
   <div class="modal-container">
     <div class="modal-exit">
-      <a href="#"><img src="imgs/xbutton.svg" alt="x" width="25px" height="25px"></a>
+      <img class="modal-x-button" src="imgs/xbutton.svg" alt="x" onclick="exitModal()">
     </div>
     <div class="modal-content">
       <h2>{title}</h2>
