@@ -92,7 +92,9 @@
   display: flex;
   align-items: center;
 }
-
+.projbox-container {
+  padding-bottom: 1%;
+}
 .projbox {
   position: relative; /* Needs to be relative to place text at center of image */
   float: left;
@@ -257,4 +259,19 @@
 .untitled-modal-img {
   width: 25%;
   height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  #projects-container .sidebar {
+    display: none;
+  }
+  .projbox {
+    float: none;
+  }
+  .projbox img {
+    float: none;
+  }
+  .projbox-container {
+    padding-bottom: 3%;
+  }
 }

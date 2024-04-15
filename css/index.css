@@ -1,7 +1,6 @@
 /* CSS for index.html */
 
 #index-container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,24 +8,20 @@
 
 /* Content container */
 #index-content {
-  max-width: 1000px;
-}
-#index-content .row {
-  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
-}
-/* Clear floats after the columns */
-#index-content .row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* My face */
 #index-content img {
-  float: left;
-  width: 30%;
+  display: block;
+  max-width: 30%;
+  width: auto;
+  height: auto;
 }
 
 /* Column for text */
@@ -63,8 +58,6 @@
   padding: 10px;
   user-select: none;
 }
-
-
 
 /* Size change compatibility */
 /* @media screen and (max-width: 1000px) {
