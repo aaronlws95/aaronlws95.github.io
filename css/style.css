@@ -361,6 +361,10 @@ footer {
 }
 
 /* Modal image styling */
+.distance-to-space-1000-modal-img {
+  width: auto;
+  height: 80%;
+}
 .neurospell-modal-img {
   width: auto;
   height: 50%;

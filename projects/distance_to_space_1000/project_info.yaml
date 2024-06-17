@@ -1,0 +1,14 @@
+---
+title: Distance to Space 1000
+date: 2024-05-29
+modal_img_url:
+  - distance_to_space_1000_ss.png
+projbox_img_url: distance_to_space_1000_cover.png
+summary: |
+        <p>
+          <b>Distance to Space 1000</b> was developed for <a class="text" href="https://itch.io/jam/speedjam5">SpeedJam #5</a>. It is a card puzzle game made in 3 days for the game jam. For this project, I was the main Unity developer and programmer. You can check it out <a class="text"  href="https://aesaire.itch.io/distance-to-space-1000">here</a>.
+        </p>
+tags:
+  - Gamedev
+  - Unity
+  - C#
