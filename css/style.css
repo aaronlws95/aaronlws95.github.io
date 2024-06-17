@@ -361,6 +361,10 @@ footer {
 }
 
 /* Modal image styling */
+.library-of-infinity-modal-img {
+  width: auto;
+  height: 80%;
+}
 .distance-to-space-1000-modal-img {
   width: auto;
   height: 80%;

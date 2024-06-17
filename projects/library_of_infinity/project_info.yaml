@@ -1,0 +1,14 @@
+---
+title: Library of Infinity
+date: 2023-09-19
+modal_img_url:
+  - lof_ss.png
+projbox_img_url: lof_cover.png
+summary: |
+        <p>
+          <b>Library of Infinity</b> is a puzzle game that was developed for <a class="text" href="https://itch.io/jam/vimjam4">VimJam4</a>. For this project, I had a minor role and helped out with some of the programming. You can check it out <a class="text"  href="https://aesaire.itch.io/library-infinity">here</a>.
+        </p>
+tags:
+  - Gamedev
+  - Unity
+  - C#
