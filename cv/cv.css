@@ -7,6 +7,7 @@ body {
   margin: auto;
   background: white;
   padding: 10px 10px 10px 10px;
+  font-size: 12pt;
 }
 
 /* Main title */
@@ -65,8 +66,10 @@ h2 a:hover {
   color: black;
 }
 a.text {
-  text-decoration: underline;
+  text-decoration: none;
   color: #000000;
+  font-weight: bold;
+  text-decoration: underline;
 }
 a.text:hover,
 a.text:active {
@@ -83,10 +86,8 @@ hr {
 
 /* Emphasis */
 em {
-  font-family: "Arial", sans-serif;
-  font-size: 90%;
+  font-size: 12pt;
   font-style: normal;
-  font-variant: small-caps;
 }
 
 /* Footer */
@@ -100,16 +101,17 @@ footer {
   font-weight: normal;
 }
 .role {
-  font-style: italic;
-  font-size: 105%;
+  font-weight: bold;
+  font-size: 12pt;
 }
 .miniheader {
   margin-top: 1.4%;
   font-weight: bold;
-  font-size: 110%;
+  font-size: 16pt;
 }
 .year {
   float: right;
+  font-size: 12pt;
   text-align: right;
   font-weight: bold;
 }
