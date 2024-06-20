@@ -6,7 +6,15 @@ Running the [scripts](scripts/) requires:
 
 - python=3.11
 - `pip install -r requirements.txt`
-- `generate_cv.py` requires installation of [wkhtmltopdf](https://wkhtmltopdf.org/).
+
+
+#### wkhtmltopdf
+
+```bash
+wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+sudo tar xvf wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+sudo mv wkhtmltox/bin/wkhtmlto* /usr/bin/
+```
 
 ### Scripts
 

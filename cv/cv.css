@@ -1,8 +1,9 @@
 /* CSS for CV /*
 
 /* Whole document */
+/* To get Roboto to work with wkhtmltopdf: https://gist.github.com/lightonphiri/5811226a1fba0b3df3be73ff2d5b351c */
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   width: 800px;
   margin: auto;
   background: white;
@@ -26,15 +27,19 @@ h1:hover {
   background-color: white;
 }
 
-/* Definition list */
-dd {
-  margin-top: 0.5%;
-  margin-right: 20%;
+/* Lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-
-/* Images */
-img.circle {
-  border-radius: 50%;
+ul .sub {
+  padding-left: 40px;
+  margin-bottom: 0px;
+}
+li {
+  margin-top: 0.5%;
 }
 
 /* Titles of categories */
@@ -42,6 +47,7 @@ h2 {
   color: white;
   display: table;
   background-color: #000000;
+  margin-bottom: 10px;
 }
 h2:hover {
   color: #000000;
@@ -84,44 +90,45 @@ hr {
   color: #a6a6a6;
 }
 
-/* Emphasis */
-em {
-  font-size: 12pt;
-  font-style: normal;
-}
-
 /* Footer */
 footer {
   margin-top: 1%;
   text-align: center;
 }
 
-/* Classes */
 .normal {
   font-weight: normal;
 }
 .role {
   font-weight: bold;
-  font-size: 12pt;
 }
-.miniheader {
-  margin-top: 1.4%;
-  font-weight: bold;
-  font-size: 16pt;
+.subyear {
+  text-align: left;
+  font-style: italic;
 }
 .year {
   float: right;
-  font-size: 12pt;
   text-align: right;
   font-weight: bold;
 }
 .personal {
   text-align: center;
+  font-size: 13pt;
 }
-.topspace {
-  margin-top: 1%;
+.location {
+  float: right;
+  text-align: right;
+  font-weight: bold;
 }
 .listheader {
   font-weight: bold;
   line-height: 0.8;
+}
+
+.item-header {
+  /* margin-top: 1.4%; */
+}
+
+.item-header span {
+  font-size: 15pt;
 }
