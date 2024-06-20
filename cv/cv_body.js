@@ -75,7 +75,7 @@ document.write(`<body>
                 <span class="location">Singapore</span>
             </div>
             <ul>
-                <li>• Researched deep learning solutions for camera-to-LiDAR calibration for autonomous vehicles.</li>
+                <li>• Researched deep learning solutions for camera-to-LiDAR calibration of autonomous vehicles.</li>
                 <li>• Deployed a <a class="text" href="https://github.com/aaronlws95/regnet">RegNet</a> based model into
                     production with TensorRT.</li>
             </ul>
@@ -117,7 +117,7 @@ document.write(`<body>
         <h2>&nbspEDUCATION&nbsp</h2>
         <!-- Phd -->
         <div class="item-header">
-            <span>Imperial College London</span>
+            <span><a href="https://www.imperial.ac.uk/" class="text">Imperial College London</a></span>
             <span class="year">2018 - 2019</span>
         </div>
         <span class="role">PhD in Machine Learning and Computer Vision (discontinued)</span>
@@ -147,7 +147,7 @@ document.write(`<body>
         </ul>
         <!-- A-Levels -->
         <div class="item-header">
-            <span>HELP Academy<span class="year">2013 - 2014</span></span>
+            <span><a href="https://academy.help.edu.my/" class="text">HELP Academy</a><span class="year">2013 - 2014</span></span>
         </div>
         <span class="role">Edexcel A-Levels</span>
         <ul>
@@ -167,9 +167,9 @@ document.write(`<body>
         <span class="role">Lecturer, Faculty of Computing and Digital Technology</span>
         <ul>
             <li>• <a href="https://github.com/aaronlws95/scratch-tutorial-2020" class="text">Lectured introductory
-                    programming</a></li>
+                    programming.</a></li>
             <li>• <a href="https://github.com/aaronlws95/deep-learning-tutorial-2020" class="text">Presented deep
-                    learning tutorials to both staff and students</a></li>
+                    learning tutorials to both staff and students.</a></li>
         </ul>
         <!--UTA-->
         <div class="item-header">
@@ -178,7 +178,7 @@ document.write(`<body>
         </div>
         <span class="role">Undergraduate Teaching Assistant, Introduction to Computer Architecture</span>
         <ul>
-            <li>Taught ARM assembly during programming tutorials</li>
+            <li>Taught ARM assembly during programming tutorials.</li>
         </ul>
         <!-- Imperial College London Game Development Society -->
         <div class="item-header">
@@ -188,7 +188,7 @@ document.write(`<body>
         </div>
         <span class="role">Co-founder and Secretary</span>
         <ul>
-            <li>Provided tutorials on game development using C# and Unity</li>
+            <li>Provided tutorials on game development using C# and Unity.</li>
         </ul>
     </div>
     <hr>
@@ -235,7 +235,7 @@ document.write(`<body>
         </div>
         <span class="role">C# Developer</span>
         <ul>
-            <li>• <b>Runner-Up ("Best Game")</b> Emotion matching game built using Microsoft Cognitive Services</li>
+            <li>• <b>Runner-Up ("Best Game")</b> Emotion matching game built using Microsoft Cognitive Services.</li>
         </ul>
         <!-- ParkWare -->
         <div class="item-header">
@@ -276,7 +276,7 @@ document.write(`<body>
     <!-- Additional-->
     <h2>&nbspLANGUAGES AND INTERESTS&nbsp</h2>
     <div>
-        <p class="listheader">Languages: <span class="normal">English (Native) • Malay (limited working)</span></p>
+        <p class="listheader">Languages: <span class="normal">English (Native) • Malay (Limited Working)</span></p>
         <p class="listheader">Interests: <span class="normal">Game Development • Bouldering • Movies</span></p>
     </div>
     <hr>
