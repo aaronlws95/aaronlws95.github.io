@@ -67,7 +67,7 @@ document.write(`<body>
         <!--Aptiv-->
         <div>
             <div class="item-header">
-                <span><a href="https://www.aptiv.com/" class="text">Aptiv</a></span>
+                <span><a href="https://www.aptiv.com/" class="text">Hyundai-Aptiv Autonomous Driving Joint Venture</a></span>
                 <span class="year">2020</span>
             </div>
             <div>
