@@ -129,7 +129,7 @@ document.write(`<body>
         <!-- MEng -->
         <div class="item-header">
             <span>Imperial College London</span>
-            <span class="year">2014 - 2019</span>
+            <span class="year">2014 - 2018</span>
         </div>
         <span class="role">Electrical and Electronic Engineering MEng</span>
         <ul>
