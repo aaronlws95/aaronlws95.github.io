@@ -245,6 +245,10 @@ footer {
 }
 .projbox-container {
   padding-bottom: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  
 }
 .projbox {
   position: relative; /* Needs to be relative to place text at center of image */
