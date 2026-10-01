@@ -1,7 +1,7 @@
 document.write(`<body>
 
     <!-- Name -->
-    <h1>&nbspAaron Low Weng Soon&nbsp</h1>
+    <h1>&nbsp;Aaron Low Weng Soon&nbsp;</h1>
     <!-- Personal Details -->
     <div class="personal">
         <a href="mailto:aaronlws95@gmail.com" class="text">aaronlws95@gmail.com</a> •
@@ -10,24 +10,24 @@ document.write(`<body>
     </div>
     <hr>
     <!-- Summary -->
-    <h2>&nbspSUMMARY&nbsp</h2>
+    <h2>&nbsp;SUMMARY&nbsp;</h2>
     <div>
-        <p>Senior robotics engineer with six years in autonomous vehicles, specialising in multi-sensor calibration and fusion. I've worked on a systems that utilise a combination of deep learning and classical methods like factor graphs, multi-view geometry and SLAM. I work end to end, developing the algorithms and building the scalable, automated tooling and infrastructure that makes them fast to iterate on and reliable to run.</p>
+        <p>Senior robotics engineer with six years in autonomous vehicles, specialising in multi-sensor calibration and fusion. I've worked on systems that utilise a combination of deep learning and classical methods like factor graphs, multi-view geometry, and SLAM. I work end to end, developing the algorithms and building the scalable, automated tooling and infrastructure that makes them fast to iterate on and reliable to run.</p>
     </div>
     <hr>
     <!-- Work -->
     <div class="section">
-        <h2>&nbspWORK EXPERIENCE&nbsp</h2>
+        <h2>&nbsp;WORK EXPERIENCE&nbsp;</h2>
         <!--Wayve-->
         <div>
             <div class="item-header">
                 <span><a href="https://www.wayve.ai/" class="text">Wayve</a></span>
-                <span class="year">2024 - 2026</span>
+                <span class="year">2024 - Present</span>
             </div>
             <div>
                 <span class="role">Senior Robotics Engineer (Sensor Calibration and Fusion)</span>
                 <span> • </span>
-                <span class="subyear">2024 - 2026</span>
+                <span class="subyear">2024</span>
                 <span class="location">London, United Kingdom</span>
             </div>
             <ul>
@@ -95,12 +95,11 @@ document.write(`<body>
     <hr>
     <!-- Publications -->
     <div>
-        <h2>&nbspPUBLICATIONS&nbsp</h2>
+        <h2>&nbsp;PUBLICATIONS&nbsp;</h2>
         <ul>
             <li>• <a class="text" href="https://arxiv.org/abs/2304.09715">UniCal: a Single-Branch Transformer-Based
                     Model for Camera-to-LiDAR Calibration and Validation</a> — a Transformer architecture using
-                self-attention to perform camera-to-LiDAR calibration and validation in a single branch.
-                arXiv:2304.09715.</li>
+                self-attention to perform camera-to-LiDAR calibration and validation in a single branch.</li>
             <li>• <a class="text"
                     href="https://github.com/aaronlws95/aaronlws95.github.io/blob/master/cv/aaronlow_masters.pdf">Depth
                     to Colour Translation for 3D Hand Pose Estimation From Monocular RGB With Generative Adversarial
@@ -110,7 +109,7 @@ document.write(`<body>
     <hr>
     <!-- Education -->
     <div>
-        <h2>&nbspEDUCATION&nbsp</h2>
+        <h2>&nbsp;EDUCATION&nbsp;</h2>
         <!-- Phd -->
         <div class="item-header">
             <span><a href="https://www.imperial.ac.uk/" class="text">Imperial College London</a></span>
@@ -127,12 +126,12 @@ document.write(`<body>
         </div>
         <span class="role">Electrical and Electronic Engineering MEng</span>
         <ul>
-            <li><b>• First Class Honours</b> • <b>Dean's List (top 10% of class) Year 2</b></li>
+            <li>• <b>First Class Honours</b> • <b>Dean's List (top 10% of class) Year 2</b></li>
         </ul>
     </div>
     <hr>
     <!-- Teaching -->
-    <h2>&nbspTEACHING&nbsp</h2>
+    <h2>&nbsp;TEACHING&nbsp;</h2>
     <div>
         <!--HELP-->
         <div class="item-header">
@@ -150,7 +149,7 @@ document.write(`<body>
     <hr>
     <!-- Projects -->
     <div>
-        <h2>&nbsp<a href="https://aaronlws95.github.io/projects.html">PROJECTS</a>&nbsp</h2>
+        <h2>&nbsp;<a href="https://aaronlws95.github.io/projects.html">PROJECTS</a>&nbsp;</h2>
         <!-- ASDA -->
         <div class="item-header">
             <span><a href="https://www.youtube.com/watch?v=3VU_DWy4ZFs" class="text">Autonomous
@@ -186,12 +185,11 @@ document.write(`<body>
     </div>
     <hr>
     <!-- Technologies -->
-    <h2>&nbspTECHNICAL SKILLS&nbsp</h2>
+    <h2>&nbsp;TECHNICAL SKILLS&nbsp;</h2>
     <div>
         <p class="listheader">Programming: <span class="normal">Python • C++ • C#</span></p>
-        <p class="listheader">ML and Robotics: <span class="normal">PyTorch • TensorFlow • ROS • TensorRT • Multi-view
-                Geometry • SLAM</span></p>
-        <p class="listheader">Infrastructure: <span class="normal">AWS • Terraform • Docker • Jenkins • Serverless •
+        <p class="listheader">ML and Robotics: <span class="normal">PyTorch • TensorFlow • ROS • TensorRT • Multi-view Geometry • SLAM • GTSAM</span></p>
+        <p class="listheader">Infrastructure: <span class="normal">AWS • Azure • Terraform • Docker • Jenkins • Serverless •
                 Bazel • CMake</span></p>
         <p class="listheader">Tools and Data: <span class="normal">Git • Linux • Bash • Pandas • SQL • Unity</span></p>
         <p class="listheader">Languages: <span class="normal">English (Native) • Malay (Limited Working)</span></p>
