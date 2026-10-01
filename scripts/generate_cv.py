@@ -15,6 +15,10 @@ if __name__ == "__main__":
         [
             "wkhtmltopdf",
             "--enable-local-file-access",
+            # wkhtmltopdf 0.12.x renders with screen media unless told otherwise.
+            # The PDF-only rules in cv.css live in @media print, so without this
+            # flag they are silently ignored.
+            "--print-media-type",
             "cv/cv.html",
             "cv/aaronlow_cv.pdf",
         ],

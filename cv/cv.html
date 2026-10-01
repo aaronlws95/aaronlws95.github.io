@@ -23,22 +23,41 @@
         <a class="text" href="https://www.linkedin.com/in/aaronlws95">linkedin.com/in/aaronlws95</a>
     </div>
     <hr>
-    <!-- Technologies -->
-    <h2>&nbspTECHNICAL SKILLS&nbsp</h2>
+    <!-- Summary -->
+    <h2>&nbspSUMMARY&nbsp</h2>
     <div>
-        <p class="listheader">Programming Languages: <span class="normal">Python • C++ • C#</span></p>
-        <p class="listheader">Deep Learning Frameworks: <span class="normal">PyTorch • TensorFlow • Keras</span></p>
-        <p class="listheader">Data Science Tools: <span class="normal">Pandas • SQL</span></p>
-        <p class="listheader">Cloud Development: <span class="normal">Serverless • AWS Services • Terraform</span></p>
-        <p class="listheader">Web Development: <span class="normal">HTML • CSS • JavaScript</span></p>
-        <p class="listheader">Build Tools: <span class="normal">CMake • Bazel</span></p>
-        <p class="listheader">Operating Systems: <span class="normal">Windows • Linux</span></p>
-        <p class="listheader">Other Tools: <span class="normal">Git • Jenkins • ROS • Docker • Bash • Unity</span></p>
+        <p>Senior robotics engineer with six years in autonomous vehicles, specialising in multi-sensor calibration and fusion. I've worked on a systems that utilise a combination of deep learning and classical methods like factor graphs, multi-view geometry and SLAM. I work end to end, developing the algorithms and building the scalable, automated tooling and infrastructure that makes them fast to iterate on and reliable to run.</p>
     </div>
     <hr>
     <!-- Work -->
     <div class="section">
         <h2>&nbspWORK EXPERIENCE&nbsp</h2>
+        <!--Wayve-->
+        <div>
+            <div class="item-header">
+                <span><a href="https://www.wayve.ai/" class="text">Wayve</a></span>
+                <span class="year">2024 - 2026</span>
+            </div>
+            <div>
+                <span class="role">Senior Robotics Engineer (Sensor Calibration and Fusion)</span>
+                <span> • </span>
+                <span class="subyear">2024 - 2026</span>
+                <span class="location">London, United Kingdom</span>
+            </div>
+            <ul>
+                <li>• Designed and implemented multi-sensor calibration algorithms (camera, IMU, lidar) combining deep
+                    learning with multi-view geometry and SLAM.</li>
+                <li>• Built scalable automated pipelines running calibration continuously supporting a fleet of vehicles spread across multiple locations globally.</li>
+                <ul class="sub">
+                    <li>• Our improvements led to a 10x speedup in turnaround time for calibrating a vehicle.</li>
+                </ul>
+                <li>• Built an end-to-end deep learning pipeline for training and evaluating visual feature extraction
+                    and calibration models, covering dataset generation, curation, and loading.</li>
+                <li>• Implemented metrics and automated validation that detect miscalibration and drift, catching issues before they reached downstream users.</li>
+                <li>• Developed internal tooling to deploy, track, and maintain per-vehicle calibrations across the fleet.</li>
+                <li>• Led technical direction, mentored junior engineers, and helped shape hiring.</li>
+            </ul>
+        </div>
         <!--Motional-->
         <div>
             <div class="item-header">
@@ -61,13 +80,6 @@
                     autonomous vehicles.</li>
                 <li>• Researched deep learning solutions for sensor calibration as well as implementing the
                     infrastructure for training and evaluation.</li>
-                <ul class="sub">
-                    <li>• <a class="text" href="https://arxiv.org/abs/2304.09715">UniCal: a Single-Branch
-                            Transformer-Based
-                            Model for Camera-to-LiDAR Calibration and Validation</a> is a novel architecture for
-                        carrying out camera-to-LiDAR calibration and validation leveraging self-attention mechanisms
-                        using a Transformer-based network.</li>
-                </ul>
                 <li>• Built and maintained cloud-based systems for continuous validation of vehicle sensor data.</li>
                 <ul class="sub">
                     <li>• Our automated system ran daily on a fleet of hundreds of vehicles allowing data-driven
@@ -88,41 +100,26 @@
                 <span class="location">Singapore</span>
             </div>
             <ul>
-                <li>• Researched deep learning solutions for camera-to-LiDAR calibration of autonomous vehicles.</li>
-                <li>• Deployed a <a class="text" href="https://github.com/aaronlws95/regnet">RegNet</a> based model into
-                    production with TensorRT.</li>
+                <li>• Researched deep learning for camera-to-LiDAR calibration and deployed a <a class="text"
+                        href="https://github.com/aaronlws95/regnet">RegNet</a> based model into production with
+                    TensorRT.</li>
             </ul>
         </div>
-        <!-- Materialise -->
-        <div>
-            <div class="item-header">
-                <span><a href="https://www.materialise.com/en" class="text">Materialise</a></span>
-                <span class="year">2016</span>
-            </div>
-            <div>
-                <span class="role">Software Engineer Intern</span>
-                <span class="location">Kuala Lumpur, Malaysia</span>
-            </div>
-            <ul>
-                <li>• <a class="text"
-                        href="https://aaronlws95.github.io/projects.html#drawing-application-modal">Designed and
-                        developed a Microsoft Paint inspired application.</a></li>
-            </ul>
-        </div>
-        <!-- Accenture -->
-        <div>
-            <div class="item-header">
-                <span><a href="https://www.accenture.com/my-en" class="text">Accenture</a></span>
-                <span class="year">2015</span>
-            </div>
-            <div>
-                <span class="role">Solution Architect Intern</span>
-                <span class="location">Kuala Lumpur, Malaysia</span>
-            </div>
-            <ul>
-                <li>• Development of front end retail system dealing mainly with system analysis and testing.</li>
-            </ul>
-        </div>
+    </div>
+    <hr>
+    <!-- Publications -->
+    <div>
+        <h2>&nbspPUBLICATIONS&nbsp</h2>
+        <ul>
+            <li>• <a class="text" href="https://arxiv.org/abs/2304.09715">UniCal: a Single-Branch Transformer-Based
+                    Model for Camera-to-LiDAR Calibration and Validation</a> — a Transformer architecture using
+                self-attention to perform camera-to-LiDAR calibration and validation in a single branch.
+                arXiv:2304.09715.</li>
+            <li>• <a class="text"
+                    href="https://github.com/aaronlws95/aaronlws95.github.io/blob/master/cv/aaronlow_masters.pdf">Depth
+                    to Colour Translation for 3D Hand Pose Estimation From Monocular RGB With Generative Adversarial
+                    Networks</a> — MEng thesis, Imperial College London.</li>
+        </ul>
     </div>
     <hr>
     <!-- Education -->
@@ -133,10 +130,8 @@
             <span><a href="https://www.imperial.ac.uk/" class="text">Imperial College London</a></span>
             <span class="year">2018 - 2019</span>
         </div>
-        <span class="role">PhD in Machine Learning and Computer Vision (discontinued)</span>
+        <span class="role">PhD Researcher, Machine Learning and Computer Vision</span>
         <ul>
-            <li>• <b>Supervisors:</b> <a href="https://www.imperial.ac.uk/people/tk.kim" class="text">Kim Tae-Kyun</a>
-                and <a href="http://personal.ie.cuhk.edu.hk/~ccloy/" class="text">Loy Chen Change</a></li>
             <li>• <b>Research area:</b> 3D Pose Estimation</li>
         </ul>
         <!-- MEng -->
@@ -146,25 +141,7 @@
         </div>
         <span class="role">Electrical and Electronic Engineering MEng</span>
         <ul>
-            <li><b>• First Class Honours</b></li>
-            <li><b>• Dean's List (top 10% of class) Year 2</b></li>
-            <li><b>• Thesis:</b> <a class="text"
-                    href="https://github.com/aaronlws95/aaronlws95.github.io/blob/master/cv/aaronlow_masters.pdf">Depth
-                    to Colour Translation for 3D
-                    Hand
-                    Pose Estimation From Monocular RGB With Generative Adversarial Networks</a></li>
-            <li><b>• Selected modules:</b> Linear Algebra • Probability and Stochastic Processes • Machine Learning •
-                Computer
-                Vision • Algorithms and Complexity
-                • Parallel Computing • Optimisation</li>
-        </ul>
-        <!-- A-Levels -->
-        <div class="item-header">
-            <span><a href="https://academy.help.edu.my/" class="text">HELP Academy</a><span class="year">2013 - 2014</span></span>
-        </div>
-        <span class="role">Edexcel A-Levels</span>
-        <ul>
-            <li><b>• 4 A*</b> Chemistry • Physics • Mathematics • Further Mathematics</li>
+            <li><b>• First Class Honours</b> • <b>Dean's List (top 10% of class) Year 2</b></li>
         </ul>
     </div>
     <hr>
@@ -180,43 +157,33 @@
         <span class="role">Lecturer, Faculty of Computing and Digital Technology</span>
         <ul>
             <li>• <a href="https://github.com/aaronlws95/scratch-tutorial-2020" class="text">Lectured introductory
-                    programming.</a></li>
-            <li>• <a href="https://github.com/aaronlws95/deep-learning-tutorial-2020" class="text">Presented deep
-                    learning tutorials to both staff and students.</a></li>
-        </ul>
-        <!--UTA-->
-        <div class="item-header">
-            <span>Imperial College London</span>
-            <span class="year">2016</span>
-        </div>
-        <span class="role">Undergraduate Teaching Assistant, Introduction to Computer Architecture</span>
-        <ul>
-            <li>Taught ARM assembly during programming tutorials.</li>
-        </ul>
-        <!-- Imperial College London Game Development Society -->
-        <div class="item-header">
-            <span>Imperial College London Game Development Society
-                <span class="year">2015 - 2018</span>
-            </span>
-        </div>
-        <span class="role">Co-founder and Secretary</span>
-        <ul>
-            <li>Provided tutorials on game development using C# and Unity.</li>
+                    programming</a> and <a href="https://github.com/aaronlws95/deep-learning-tutorial-2020"
+                    class="text">presented deep learning tutorials to both staff and students.</a></li>
         </ul>
     </div>
     <hr>
     <!-- Projects -->
     <div>
         <h2>&nbsp<a href="https://aaronlws95.github.io/projects.html">PROJECTS</a>&nbsp</h2>
-        <!-- Distance to Space 1000 -->
+        <!-- ASDA -->
         <div class="item-header">
-            <span><a href="https://aesaire.itch.io/distance-to-space-1000" class="text">Distance to Space
-                    1000</a></span>
-            <span class="year">2024</span>
+            <span><a href="https://www.youtube.com/watch?v=3VU_DWy4ZFs" class="text">Autonomous
+                    Snack Delivery Android (ASDA)</a></span>
+            <span class="year">2017</span>
         </div>
-        <span class="role">Unity/C# Developer</span>
+        <span class="role">Robot Navigation</span>
         <ul>
-            <li>• Entry to the SpeedJam 5 2024 game jam. A 2D card-based puzzle game written in Unity with C#.</li>
+            <li>• Autonomous robot that manoeuvres a building and takes an elevator to obtain and deliver snacks.</li>
+        </ul>
+        <!-- ParkWare -->
+        <div class="item-header">
+            <span><a href="https://aaronlws95.github.io/projects.html#parkware-modal" class="text">ParkWare</a></span>
+            <span class="year">2016</span>
+        </div>
+        <span class="role">Machine Learning and Web</span>
+        <ul>
+            <li>• <b>Prize Winner (“Best use of Amazon Web Services”)</b> Parking space detection web service using
+                machine learning to detect cars in parking lots.</li>
         </ul>
         <!-- Without Abandonware -->
         <div class="item-header">
@@ -227,70 +194,21 @@
         </div>
         <span class="role">Unity/C# Developer</span>
         <ul>
-            <li>• Entry to the Game Off 2021 game jam. A 2D platformer written in Unity with C#.</li>
-        </ul>
-        <!-- ASDA -->
-        <div class="item-header">
-            <span><a href="https://www.youtube.com/watch?v=3VU_DWy4ZFs" class="text">Autonomous
-                    Snack Delivery Android (ASDA)</a></span>
-            <span class="year">2017</span>
-        </div>
-        <span class="role">Development of Robot Navigation</span>
-        <ul>
-            <li>• Autonomous robot that is capable of manoeuvring a building and taking an elevator to obtain and
-                deliver snacks.
-            </li>
-        </ul>
-        <!-- Emocoaster -->
-        <div class="item-header">
-            <span><a href="https://aaronlws95.github.io/projects.html#emotional-rollercoaster-modal"
-                    class="text">Emocoaster</a><span class="year">2017</span></span>
-        </div>
-        <span class="role">C# Developer</span>
-        <ul>
-            <li>• <b>Runner-Up ("Best Game")</b> Emotion matching game built using Microsoft Cognitive Services.</li>
-        </ul>
-        <!-- ParkWare -->
-        <div class="item-header">
-            <span><a href="https://aaronlws95.github.io/projects.html#parkware-modal" class="text">ParkWare</a></span>
-            <span class="year">2016</span>
-        </div>
-        <span class="role">Web Developer</span>
-        <ul>
-            <li>• <b>Prize Winner (“Best use of Amazon Web Services”)</b> Parking space detection web service using
-                machine
-                learning to detect cars in parking lots.</li>
+            <li>• <b>Featured by GitHub</b> in "Top entries from Game Off 2021". A 2D platformer written in Unity with
+                C#.</li>
         </ul>
     </div>
     <hr>
-    <!-- Learning -->
-    <h2>&nbspLEARNING&nbsp</h2>
+    <!-- Technologies -->
+    <h2>&nbspTECHNICAL SKILLS&nbsp</h2>
     <div>
-        <!-- Data Science Nanodegree -->
-        <div class="item-header">
-            <span><a href="https://www.udacity.com/course/data-scientist-nanodegree--nd025" class="text">Data
-                    Science Nanodegree (Udacity)</a></span>
-            <span class="year">2021</span>
-        </div>
-        <ul>
-            <li>• <a href="https://aaronlws.medium.com/dog-breed-classification-app-udacity-dsnd-1a117cd90af9"
-                    class="text">Dog
-                    Breed Classifier Project Article</a></li>
-        </ul>
-        <!-- Deep Learning Specialization -->
-        <div class="item-header">
-            <span><a href="https://www.coursera.org/specializations/deep-learning" class="text">Deep
-                    Learning
-                    Specialization by Andrew Ng (Coursera)</a></span>
-            <span class="year">2018</span>
-        </div>
-    </div>
-    <hr>
-    <!-- Additional-->
-    <h2>&nbspLANGUAGES AND INTERESTS&nbsp</h2>
-    <div>
+        <p class="listheader">Programming: <span class="normal">Python • C++ • C#</span></p>
+        <p class="listheader">ML and Robotics: <span class="normal">PyTorch • TensorFlow • ROS • TensorRT • Multi-view
+                Geometry • SLAM</span></p>
+        <p class="listheader">Infrastructure: <span class="normal">AWS • Terraform • Docker • Jenkins • Serverless •
+                Bazel • CMake</span></p>
+        <p class="listheader">Tools and Data: <span class="normal">Git • Linux • Bash • Pandas • SQL • Unity</span></p>
         <p class="listheader">Languages: <span class="normal">English (Native) • Malay (Limited Working)</span></p>
-        <p class="listheader">Interests: <span class="normal">Game Development • Bouldering • Movies</span></p>
     </div>
     <hr>
 </body>
