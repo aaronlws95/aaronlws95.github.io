@@ -12,7 +12,7 @@ document.write(`<body>
     <!-- Summary -->
     <h2>&nbsp;SUMMARY&nbsp;</h2>
     <div>
-        <p>Senior robotics engineer with six years in autonomous vehicles, specialising in multi-sensor calibration and fusion. I've worked on systems that utilise a combination of deep learning and classical methods like factor graphs, multi-view geometry, and SLAM. I work end to end, developing the algorithms and building the scalable, automated tooling and infrastructure that makes them fast to iterate on and reliable to run.</p>
+        <p>Senior robotics engineer with six years in autonomous vehicles, specialising in multi-sensor calibration and fusion. During my career, I've worked on systems that utilise a combination of deep learning and classical methods like factor graphs, multi-view geometry, and SLAM. I work end to end, developing the algorithms and building the scalable, automated tooling and infrastructure that makes them fast to iterate on and reliable to run.</p>
     </div>
     <hr>
     <!-- Work -->
