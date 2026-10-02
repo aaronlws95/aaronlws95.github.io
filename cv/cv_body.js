@@ -188,8 +188,8 @@ document.write(`<body>
     <h2>&nbsp;TECHNICAL SKILLS&nbsp;</h2>
     <div>
         <p class="listheader">Programming: <span class="normal">Python • C++ • C#</span></p>
-        <p class="listheader">ML and Robotics: <span class="normal">PyTorch • TensorFlow • ROS • TensorRT • Multi-view Geometry • SLAM • GTSAM</span></p>
-        <p class="listheader">Infrastructure: <span class="normal">AWS • Azure • Terraform • Docker • Jenkins • Serverless •
+        <p class="listheader">ML and Robotics: <span class="normal">PyTorch • TensorFlow • ROS • TensorRT • GTSAM</span></p>
+        <p class="listheader">Infrastructure: <span class="normal">AWS • Azure • Kubernetes • Spark • Terraform • Docker • Jenkins • Serverless •
                 Bazel • CMake</span></p>
         <p class="listheader">Tools and Data: <span class="normal">Git • Linux • Bash • Pandas • SQL • Unity</span></p>
         <p class="listheader">Languages: <span class="normal">English (Native) • Malay (Limited Working)</span></p>
