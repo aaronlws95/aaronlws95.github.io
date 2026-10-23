@@ -35,7 +35,7 @@ document.write(`<body>
                     learning with multi-view geometry and SLAM.</li>
                 <li>• Built scalable automated pipelines running calibration continuously supporting a fleet of vehicles spread across multiple locations globally.</li>
                 <ul class="sub">
-                    <li>• Our improvements led to a 10x speedup in turnaround time for calibrating a vehicle.</li>
+                    <li>• Our improvements led to a 4x speedup in turnaround time for calibrating a vehicle.</li>
                 </ul>
                 <li>• Built an end-to-end deep learning pipeline for training and evaluating visual feature extraction
                     and calibration models, covering dataset generation, curation, and loading.</li>
