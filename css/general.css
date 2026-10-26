@@ -1,5 +1,12 @@
 /* CSS for overall website */
 
+:root {
+  --black: black;
+  --white: white;
+  --link: #333399;
+  --font-body: "Roboto", Helvetica, Arial, sans-serif;
+}
+
 /* Fix overall position of website */
 html {
   margin: 0;
@@ -9,8 +16,8 @@ html {
 
 /* Body */
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  background: white;
+  font-family: var(--font-body);
+  background: var(--white);
   margin: 0;
   padding: 0;
 }
@@ -24,26 +31,26 @@ body {
 h1 {
   display: inline-block;
   font-size: 55px;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   margin-top: 2%;
   margin-bottom: 1%;
 }
 h1:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
 }
 h2 {
   display: inline-block;
   font-size: 35px;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   margin-top: 2%;
   margin-bottom: 1%;
 }
 h2:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 hr {
@@ -53,13 +60,13 @@ hr {
 /* Links */
 a.text {
   text-decoration: none;
-  color: #333399;
+  color: var(--link);
   text-decoration: underline;
 }
 a.text:hover,
 a.text:active {
-  background-color: #000000;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   text-decoration: none;
   text-shadow: 1px 1px 1px #333;
 }
@@ -68,8 +75,8 @@ a.text:active {
 footer {
   bottom: 0;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   overflow: none;
   position: fixed; /* Keeps the footer at the bottom of the page regardless of scroll */
   user-select: none;

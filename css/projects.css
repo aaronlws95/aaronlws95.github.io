@@ -1,4 +1,4 @@
-/* CSS for projects.html /*
+/* CSS for projects.html */
 
 /* Container */
 #projects-container {
@@ -14,11 +14,11 @@
   align-items: center;
 }
 
-/* Sidebar toggle button */
-#sidebar-toggle-button {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+/* Sidebar reset button */
+#reset-filters-button {
+  font-family: var(--font-body);
   font-size: 16px;
-  color: white;
+  color: var(--white);
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
@@ -28,17 +28,17 @@
   padding: 14px 16px;
   text-align: center;
   cursor: pointer;
-  background-color: black;
+  background-color: var(--black);
 }
-#sidebar-toggle-button.active {
-  background-color: white;
-  color: black;
+#reset-filters-button:disabled {
+  opacity: 0.4;
+  cursor: default;
 }
 
 /* Tags sidebar */
 #tags-sidebar {
   width: 200px;
-  background: white;
+  background: var(--white);
   box-sizing: border-box;
   overflow-x: hidden;
   height: 100vh;
@@ -58,31 +58,23 @@
   cursor: pointer;
   width: 150px;
   display: block;
-  color: black;
+  color: var(--black);
   text-align: center;
   font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
-  border: solid #000000 2px;
-  background-color: white;
+  border: solid var(--black) 2px;
+  background-color: var(--white);
 }
 .tag-button button.active {
   display: block;
-  color: white;
+  color: var(--white);
   text-align: center;
   font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
-  border: solid #000000 2px;
-  background-color: black;
-}
-
-/* Gif that shows when all projects are toggled off */
-#no-project-gif {
-  display: none;
-}
-#no-project-gif.show {
-  display: block;
+  border: solid var(--black) 2px;
+  background-color: var(--black);
 }
 
 /* Project boxes */
@@ -112,7 +104,7 @@
   float: left;
   width: 250px;
   height: 250px;
-  border: solid #000000 5px;
+  border: solid var(--black) 5px;
   text-align: center;
 }
 .projbox .text {
@@ -144,8 +136,15 @@
 }
 
 /* Modals */
-[id*="modal"] {
-  display: none;
+dialog.modal {
+  /* Reset the browser's default dialog styling */
+  padding: 0;
+  border: 0;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  inset: auto;
+
   position: fixed;
   top: 50%;
   left: 50%;
@@ -153,17 +152,16 @@
   width: 95%;
   height: 95%;
   background-color: rgba(0, 0, 0, 0.5);
-}
-[id*="modal"]:target {
-  display: block;
+  color: inherit;
+  outline: none; /* The dialog itself takes focus when opened */
 }
 .modal-container {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
-  border: solid black 5px;
+  background-color: var(--white);
+  border: solid var(--black) 5px;
   width: 80%;
   height: 80%;
   overflow: auto;
@@ -189,21 +187,21 @@
   float: left;
   width: 250px;
   height: 250px;
-  border: solid #000000 5px;
+  border: solid var(--black) 5px;
   text-align: center;
   font-size: 3em;
-  background-color: black;
+  background-color: var(--black);
 }
 #this-website p {
   display: inline-block;
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 #this-website:hover {
-  background-color: white;
+  background-color: var(--white);
 }
 #this-website:hover p {
-  color: black;
+  color: var(--black);
 }
 
 /* Modal x button */

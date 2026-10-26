@@ -32,7 +32,7 @@
 }
 #index-text-container .text-column {
   float: left;
-  border: solid black 3px;
+  border: solid var(--black) 3px;
   text-align: justify;
 
   /* Spacing outside the box */
