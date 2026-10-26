@@ -1,6 +1,6 @@
 """Install Roboto under a private family name so the CV PDF gets a true Regular.
 
-Run once per machine before generate_cv.py:
+Run once per machine before building the CV PDF (scripts/build.py):
 
     python3 scripts/install_roboto_cv.py
 
@@ -29,6 +29,7 @@ Nothing outside ~/.local/share/fonts is touched, and the change is undone by
 deleting the RobotoCV-*.ttf files from that directory and running `fc-cache -f`.
 """
 
+import glob
 import os
 import shutil
 import subprocess
@@ -39,7 +40,16 @@ try:
 except ImportError:
     sys.exit("fontTools is required: pip install fonttools")
 
-SRC_DIR = "/usr/share/fonts/googlefonts/Roboto"
+
+
+def find_roboto_dir():
+    """Directory holding the system Roboto faces (differs per distro/package)."""
+    pattern = "/usr/share/fonts/**/Roboto-Regular.ttf"
+    matches = sorted(glob.glob(pattern, recursive=True))
+    return os.path.dirname(matches[0]) if matches else None
+
+
+SRC_DIR = find_roboto_dir()
 DST_DIR = os.path.expanduser("~/.local/share/fonts")
 
 NEW_FAMILY = "Roboto CV"
@@ -61,8 +71,8 @@ NAME_IDS = (1, 3, 4, 6, 16)
 
 
 def main():
-    if not os.path.isdir(SRC_DIR):
-        sys.exit(f"Roboto not found at {SRC_DIR}")
+    if SRC_DIR is None:
+        sys.exit("Roboto not found under /usr/share/fonts (apt install fonts-roboto)")
 
     os.makedirs(DST_DIR, exist_ok=True)
     written = []

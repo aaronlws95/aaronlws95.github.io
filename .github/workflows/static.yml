@@ -27,17 +27,38 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Lint scripts
+        run: |
+          pip install ruff
+          ruff check scripts
+      - name: Install CV tooling
+        # wkhtmltopdf 0.12.4 (patched Qt) renders the CV PDF; see scripts/install_roboto_cv.py
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-roboto fontconfig libxrender1 libxext6 libfontconfig1 xfonts-base xfonts-75dpi
+          wget -q https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+          tar xf wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+          sudo mv wkhtmltox/bin/wkhtmlto* /usr/bin/
+          pip install -r requirements.txt
+          python scripts/install_roboto_cv.py
+      - name: Build site
+        run: |
+          pip install -r requirements.txt
+          python scripts/build.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: 'dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

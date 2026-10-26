@@ -4,8 +4,8 @@ nav {
   display: flex;
   flex-direction: row;
   font-size: 20px;
-  color: white;
-  background-color: black;
+  color: var(--white);
+  background-color: var(--black);
   text-align: center;
   font-weight: bold;
   text-decoration: none;
@@ -15,26 +15,26 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: var(--white);
   text-align: center;
   font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
-  border: solid #000000 2px;
+  border: solid var(--black) 2px;
   z-index:1;
 
 }
 nav a.active {
-  color: black;
-  background-color: white;
+  color: var(--black);
+  background-color: var(--white);
 }
 nav a:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
 }
 a.active:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* Marquee just because */

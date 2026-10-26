@@ -1,118 +1,78 @@
-filterSelection();
+const tagButtons = [...document.querySelectorAll(".tag-button-container button")];
+const resetButton = document.getElementById("reset-filters-button");
+const projboxes = [...document.querySelectorAll(".projbox")];
 
-document.body.addEventListener(
-    "click",
-    function (evt) {
-        onOutsideModalClick(evt);
+// --- Filtering ---
+// Tags are multi-select and combine as "any of". With no tags selected, everything is shown.
+
+function applyFilter() {
+    const activeTags = new Set(
+        tagButtons.filter((b) => b.classList.contains("active")).map((b) => b.dataset.tag),
+    );
+
+    for (const box of projboxes) {
+        const show =
+            activeTags.size === 0 || box.dataset.tags.split(" ").some((tag) => activeTags.has(tag));
+        box.classList.toggle("show-projbox", show);
+    }
+
+    resetButton.disabled = activeTags.size === 0;
+}
+
+document.querySelector(".tag-button-container").addEventListener("click", (evt) => {
+    const button = evt.target.closest("button");
+    if (!button) return;
+    const active = button.classList.toggle("active");
+    button.setAttribute("aria-pressed", active);
+    applyFilter();
+});
+
+resetButton.addEventListener("click", () => {
+    for (const button of tagButtons) {
+        button.classList.remove("active");
+        button.setAttribute("aria-pressed", false);
+    }
+    applyFilter();
+});
+
+// --- Modals ---
+// A modal is a <dialog> opened by linking to its id (e.g. projects.html#twog-modal),
+// so modals can be deep linked and the back button closes them.
+
+function syncModalWithHash() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    const target = id ? document.getElementById(id) : null;
+
+    for (const dialog of document.querySelectorAll("dialog[open]")) {
+        if (dialog !== target) dialog.close();
+    }
+    if (target instanceof HTMLDialogElement && !target.open) {
+        target.showModal();
+    }
+}
+
+// "close" doesn't bubble, so listen in the capture phase
+document.addEventListener(
+    "close",
+    (evt) => {
+        // Drop the hash without scrolling or adding a history entry
+        if (location.hash === `#${evt.target.id}`) {
+            history.replaceState(null, "", location.pathname + location.search);
+        }
     },
-    false,
+    true,
 );
 
-document.body.addEventListener("keydown", function (e) {
-    if (e.key == "Escape") {
-        exitModal();
+document.addEventListener("click", (evt) => {
+    // Click on the dim area around a modal, or on its X button
+    if (evt.target instanceof HTMLDialogElement) {
+        evt.target.close();
+    } else if (evt.target.closest("[data-close]")) {
+        evt.target.closest("dialog").close();
     }
 });
-function toggleSidebar() {
-    var buttons = document.querySelectorAll(".tag-button-container button");
 
-    // Count number of buttons that are active
-    var activeCount = 0;
-    for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].classList.contains("active")) {
-            activeCount += 1;
-        }
-    }
+window.addEventListener("hashchange", syncModalWithHash);
 
-    // Only remove all if all are active
-    var removeActive = false;
-    if (activeCount === buttons.length) {
-        removeActive = true;
-    }
-
-    // Toggle sidebar button active
-    var sidebar = document.getElementById("sidebar-toggle-button");
-    if (removeActive) {
-        sidebar.classList.remove("active");
-    }
-    else {
-        sidebar.classList.add("active");
-    }
-
-    // Toggle tag buttons active
-    for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].classList.contains("active") && removeActive) {
-            buttons[i].classList.remove("active");
-        } else if (!buttons[i].classList.contains("active") && !removeActive) {
-            buttons[i].classList.add("active");
-        }
-    }
-
-    filterSelection();
-}
-
-function onFilterButtonPress(id) {
-    // Set button to active
-    var button = document.getElementById(id);
-    button.classList.toggle("active");
-    filterSelection();
-}
-
-function filterSelection() {
-    // Get the selected categories
-    var buttons = document.querySelectorAll(".tag-button-container button");
-    var categories = [];
-    for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].classList.contains("active")) {
-            categories.push(buttons[i].value);
-        }
-    }
-
-    // Apply the filter
-    var items = document.querySelectorAll(".projbox");
-    var show = false;
-    var numShow = 0;
-    for (var i = 0; i < items.length; i++) {
-        var item = items[i];
-        show = false;
-        for (var j = 0; j < categories.length; j++) {
-            if (item.classList.contains(categories[j])) {
-                show = true;
-                item.classList.add("show-projbox");
-                break;
-            }
-        }
-
-        if (!show) {
-            item.classList.remove("show-projbox");
-        }
-
-        if (item.classList.contains("show-projbox")) {
-            numShow += 1;
-        }
-    }
-
-    var gif = document.getElementById("no-project-gif");
-    if (numShow === 0) {
-        gif.classList.add("show");
-    }
-    else if (gif.classList.contains("show")) {
-        gif.classList.remove("show");
-    }
-}
-
-function onOutsideModalClick(evt) {
-    if (evt.target.className !== "modal" && evt.target !== document.body) {
-        return;
-    }
-
-    exitModal();
-}
-
-function exitModal() {
-    // Retain scroll position
-    localStorage.setItem("scrollpos", window.scrollY);
-    window.location.href = "#";
-    var scrollpos = localStorage.getItem("scrollpos");
-    if (scrollpos) window.scrollTo(0, scrollpos);
-}
+applyFilter();
+syncModalWithHash();
