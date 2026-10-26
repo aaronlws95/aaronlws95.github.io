@@ -318,6 +318,7 @@ def build_cv_pdf() -> None:
         ],
         capture_output=True,
         text=True,
+        check=False,  # failure is reported below with wkhtmltopdf's stderr
     )
     if result.returncode != 0:
         raise BuildError(f"wkhtmltopdf failed:\n{result.stderr}")
